@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{0C394364-A161-40A3-A36A-C6DA99C56886}</ProjectGuid>
+		<RootNamespace>VBtoConverterTest2</RootNamespace>
+		<Keyword>MFCProj</Keyword>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseOfMfc>Dynamic</UseOfMfc>
+		<CharacterSet>MultiByte</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<UseOfMfc>Dynamic</UseOfMfc>
+		<CharacterSet>MultiByte</CharacterSet>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+		<LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+		<OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+		<IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+		<LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<Midl>
+			<PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MkTypLibCompatible>false</MkTypLibCompatible>
+			<ValidateAllParameters>true</ValidateAllParameters>
+		</Midl>
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;VBtoVCMFC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<WarningLevel>Level3</WarningLevel>
+			<DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<Culture>0x0409</Culture>
+			<AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Windows</SubSystem>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<Midl>
+			<PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MkTypLibCompatible>false</MkTypLibCompatible>
+			<ValidateAllParameters>true</ValidateAllParameters>
+		</Midl>
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;VBtoVCMFC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<MinimalRebuild>false</MinimalRebuild>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<WarningLevel>Level3</WarningLevel>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<Culture>0x0409</Culture>
+			<AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Windows</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="VBtoConverterTest2.cpp"/>
+		<ClCompile Include="stdafx.cpp">
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+			<PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+		</ClCompile>
+		<ClCompile Include="frmTestFileSystemObject.cpp"/>
+		<ClCompile Include="frmTestString.cpp"/>
+		<ClCompile Include="frmTestEvents.cpp"/>
+		<ClCompile Include="frmTestVisible.cpp"/>
+		<ClCompile Include="frmTestMath.cpp"/>
+		<ClCompile Include="frmTestMsgBox.cpp"/>
+		<ClCompile Include="frmTestListBox.cpp"/>
+		<ClCompile Include="frmTestFormProperty.cpp"/>
+		<ClCompile Include="frmMain.cpp"/>
+		<ClCompile Include="Form1.cpp"/>
+		<ClCompile Include="Form2.cpp"/>
+		<ClCompile Include="Form3.cpp"/>
+		<ClCompile Include="Form3_SSTab1_Page3.cpp"/>
+		<ClCompile Include="Form3_SSTab1_Page2.cpp"/>
+		<ClCompile Include="Form3_SSTab1_Page1.cpp"/>
+		<ClCompile Include="frmTestDoWhile.cpp"/>
+		<ClCompile Include="frmTestSelect.cpp"/>
+		<ClCompile Include="frmTestTimer.cpp"/>
+		<ClCompile Include="frmTestLen.cpp"/>
+		<ClCompile Include="frmTestCommonDialog.cpp"/>
+		<ClCompile Include="frmTestArray.cpp"/>
+		<ClCompile Include="frmTestMisc.cpp"/>
+		<ClCompile Include="frmTestMisc_SSTab1_Page3.cpp"/>
+		<ClCompile Include="frmTestMisc_SSTab1_Page2.cpp"/>
+		<ClCompile Include="frmTestMisc_SSTab1_Page1.cpp"/>
+		<ClCompile Include="frmTestGDI.cpp"/>
+		<ClCompile Include="frmTestCursor.cpp"/>
+		<ClCompile Include="frmTestTypeCast.cpp"/>
+		<ClCompile Include="frmTestLike.cpp"/>
+		<ClCompile Include="frmTestExpression.cpp"/>
+		<ClCompile Include="frmTestModuleClass.cpp"/>
+		<ClCompile Include="frmTestReDim.cpp"/>
+		<ClCompile Include="frmTestListView.cpp"/>
+		<ClCompile Include="frmTestOnError.cpp"/>
+		<ClCompile Include="frmTestControlArrays.cpp"/>
+		<ClCompile Include="frmTestAutoDim.cpp"/>
+		<ClCompile Include="frmTestInputBox.cpp"/>
+		<ClCompile Include="frmTestPropertyGetLet.cpp"/>
+		<ClCompile Include="frmTestPrinter.cpp"/>
+		<ClCompile Include="frmTestTabStrip.cpp"/>
+		<ClCompile Include="frmTestTabStrip_SSTab1_Page3.cpp"/>
+		<ClCompile Include="frmTestTabStrip_SSTab1_Page2.cpp"/>
+		<ClCompile Include="frmTestTabStrip_SSTab1_Page1.cpp"/>
+		<ClCompile Include="frmTestPaint.cpp"/>
+		<ClCompile Include="frmTestNamedArgs.cpp"/>
+		<ClCompile Include="frmTestFontProperty.cpp"/>
+		<ClCompile Include="frmTestStatusBar.cpp"/>
+		<ClCompile Include="frmTestTreeView.cpp"/>
+		<ClCompile Include="frmTestDeclare.cpp"/>
+		<ClCompile Include="frmTestExtConsts.cpp"/>
+		<ClCompile Include="frmTestDate.cpp"/>
+		<ClCompile Include="mdlCommonVars.cpp"/>
+		<ClCompile Include="Module1Name.cpp"/>
+		<ClCompile Include="Module2Name.cpp"/>
+		<ClCompile Include="Module3Name.cpp"/>
+		<ClCompile Include="ModuleTestDeclare.cpp"/>
+		<ClCompile Include="Class1Name.cpp"/>
+		<ClCompile Include="Class2Name.cpp"/>
+		<ClCompile Include="ClassTestDeclare.cpp"/>    <ClCompile Include="VBto_Converter.cpp"/>
+    </ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="VBtoConverterTest2.h"/>
+		<ClInclude Include="Resource.h"/>
+		<ClInclude Include="stdafx.h"/>
+		<ClInclude Include="frmTestFileSystemObject.h"/>
+		<ClInclude Include="frmTestString.h"/>
+		<ClInclude Include="frmTestEvents.h"/>
+		<ClInclude Include="frmTestVisible.h"/>
+		<ClInclude Include="frmTestMath.h"/>
+		<ClInclude Include="frmTestMsgBox.h"/>
+		<ClInclude Include="frmTestListBox.h"/>
+		<ClInclude Include="frmTestFormProperty.h"/>
+		<ClInclude Include="frmMain.h"/>
+		<ClInclude Include="Form1.h"/>
+		<ClInclude Include="Form2.h"/>
+		<ClInclude Include="Form3.h"/>
+		<ClInclude Include="Form3_SSTab1_Page3.h"/>
+		<ClInclude Include="Form3_SSTab1_Page2.h"/>
+		<ClInclude Include="Form3_SSTab1_Page1.h"/>
+		<ClInclude Include="frmTestDoWhile.h"/>
+		<ClInclude Include="frmTestSelect.h"/>
+		<ClInclude Include="frmTestTimer.h"/>
+		<ClInclude Include="frmTestLen.h"/>
+		<ClInclude Include="frmTestCommonDialog.h"/>
+		<ClInclude Include="frmTestArray.h"/>
+		<ClInclude Include="frmTestMisc.h"/>
+		<ClInclude Include="frmTestMisc_SSTab1_Page3.h"/>
+		<ClInclude Include="frmTestMisc_SSTab1_Page2.h"/>
+		<ClInclude Include="frmTestMisc_SSTab1_Page1.h"/>
+		<ClInclude Include="frmTestGDI.h"/>
+		<ClInclude Include="frmTestCursor.h"/>
+		<ClInclude Include="frmTestTypeCast.h"/>
+		<ClInclude Include="frmTestLike.h"/>
+		<ClInclude Include="frmTestExpression.h"/>
+		<ClInclude Include="frmTestModuleClass.h"/>
+		<ClInclude Include="frmTestReDim.h"/>
+		<ClInclude Include="frmTestListView.h"/>
+		<ClInclude Include="frmTestOnError.h"/>
+		<ClInclude Include="frmTestControlArrays.h"/>
+		<ClInclude Include="frmTestAutoDim.h"/>
+		<ClInclude Include="frmTestInputBox.h"/>
+		<ClInclude Include="frmTestPropertyGetLet.h"/>
+		<ClInclude Include="frmTestPrinter.h"/>
+		<ClInclude Include="frmTestTabStrip.h"/>
+		<ClInclude Include="frmTestTabStrip_SSTab1_Page3.h"/>
+		<ClInclude Include="frmTestTabStrip_SSTab1_Page2.h"/>
+		<ClInclude Include="frmTestTabStrip_SSTab1_Page1.h"/>
+		<ClInclude Include="frmTestPaint.h"/>
+		<ClInclude Include="frmTestNamedArgs.h"/>
+		<ClInclude Include="frmTestFontProperty.h"/>
+		<ClInclude Include="frmTestStatusBar.h"/>
+		<ClInclude Include="frmTestTreeView.h"/>
+		<ClInclude Include="frmTestDeclare.h"/>
+		<ClInclude Include="frmTestExtConsts.h"/>
+		<ClInclude Include="frmTestDate.h"/>
+		<ClInclude Include="mdlCommonVars.h"/>
+		<ClInclude Include="Module1Name.h"/>
+		<ClInclude Include="Module2Name.h"/>
+		<ClInclude Include="Module3Name.h"/>
+		<ClInclude Include="ModuleTestDeclare.h"/>
+		<ClInclude Include="Class1Name.h"/>
+		<ClInclude Include="Class2Name.h"/>
+		<ClInclude Include="ClassTestDeclare.h"/>
+		<ClInclude Include="VBto_Converter.h"/>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="res\VBtoConverterTest2.ico"/>
+		<None Include="res\VBtoConverterTest2.rc2"/>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="VBtoConverterTest2.rc"/>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

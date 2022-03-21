@@ -1,0 +1,1341 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\VBtoConverterTest2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""       // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON        "res\\VBtoConverterTest2.ico"
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+        BLOCK "040904e4"
+        BEGIN 
+	    VALUE "CompanyName", "StressSoft Company Ltd."
+	    VALUE "FileDescription", "www.vbto.net"
+	    VALUE "InternalName", "VBto Converter Test 2"
+	    VALUE "LegalCopyright", "Copyright © 2005-2011 StressSoft Company Ltd."
+	    VALUE "Comments", "VBto Converter Test2"
+	    VALUE "ProductName", "VBto Converter 2.49"
+	    VALUE "OriginalFilename", "VBtoConverterTest2"
+	    VALUE "FileVersion",     "1.0.0.1"
+	    VALUE "ProductVersion",  "1.0.0.1"
+        END
+      END
+      BLOCK "VarFileInfo" 
+      BEGIN 
+        VALUE "Translation", 0x0409, 1252
+      END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO  
+BEGIN
+    IDD_VBTOCONVERTERTEST2_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193 
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+
+#endif
+#ifdef _UNICODE
+#endif
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\\VBtoConverterTest2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+IDDfrmVBtoInputBox DIALOGEX 0, 0, 281, 62
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VBto InputBox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        txtResult,5,42,271,15
+    DEFPUSHBUTTON   "OK",cmdOk,236,5,40,15
+    PUSHBUTTON      "Cancel",cmdCancel,236,23,40,15
+    LTEXT           "",lblPrompt,5,10,227,26
+END
+
+IDDfrmTestDate DIALOGEX 0, 0, 276, 249
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Date/Time"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of some functions and properties for Date (and Time) by VBto software. ",Label1,15,5,247,20,0x0
+    EDITTEXT        Text1,5,30,266,212,ES_READONLY | ES_MULTILINE
+END
+
+IDDfrmTestExtConsts DIALOGEX 0, 0, 187, 202
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test ""External Consts"""
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "See """"Replacement Rules"""" folder for details",Label1,5,5,178,15,0x0
+    LISTBOX         ListBoxMsg,5,25,178,138,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+    PUSHBUTTON      "Run Test",CmdRunTest,133,182,50,15
+    GROUPBOX        "Output messages: ",Frame1,5,172,124,25,0,WS_EX_TRANSPARENT
+    CONTROL         "All",OptAll,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,182,30,10,WS_EX_TRANSPARENT
+    CONTROL         "Warning only",OptWarningOnly,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,59,182,55,10,WS_EX_TRANSPARENT
+END
+
+IDDfrmTestDeclare DIALOGEX 0, 0, 276, 228
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Declare"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion """"Declares"""" by VBto Converter",Label1,5,5,266,10,0x0
+    PUSHBUTTON      "ShellExecute",CmdShellExecute,142,208,62,15
+    GROUPBOX        "GetCursorPos",Frame1,5,162,104,40,0,WS_EX_TRANSPARENT
+    LTEXT           "X = ",LabelX,15,177,50,10,0x0
+    LTEXT           "Y = ",LabelY,15,187,50,10,0x0
+    GROUPBOX        "GetSystemMetrics",Frame2,118,113,153,45,0,WS_EX_TRANSPARENT
+    LTEXT           "Screen Area = ",LabelScreenArea,128,128,129,10,0x0
+    LTEXT           "Number of buttons on mouse = ",LabelNumberButtonsMouse,128,141,134,10,0x0
+    GROUPBOX        "GetComputerName",Frame3,118,79,153,30,0,WS_EX_TRANSPARENT
+    LTEXT           "ComputerName",LabelComputerName,128,91,134,10,0x0
+    CONTROL         "",Picture1,"Static",WS_TABSTOP | WS_BORDER,5,94,104,55
+    PUSHBUTTON      "Redraw",BtnRedraw,5,208,62,15
+    PUSHBUTTON      "MsgBox",CmdMsgBox,73,208,62,15
+    GROUPBOX        "GetEnvironmentVariable",Frame0,5,20,266,55,0,WS_EX_TRANSPARENT
+    LTEXT           "(see also USERNAME, PATH, TEMP, OS, ... )",Label2,122,38,143,10,0x0
+    EDITTEXT        txtGetEnv,10,54,257,13,ES_READONLY | NOT WS_TABSTOP
+    PUSHBUTTON      "Get",CmdGetEnv,10,34,32,15
+    EDITTEXT        txtVariableName,47,37,70,13,NOT WS_TABSTOP
+    PUSHBUTTON      "www.vbto.net",CmdShellExecute2,210,208,62,15
+    GROUPBOX        "GetLocalTime",Frame4,118,162,153,40,0,WS_EX_TRANSPARENT
+    LTEXT           "Date = ",LabelDate,192,177,74,10,0x0
+    LTEXT           "Time = ",LabelTime,192,187,74,10,0x0
+    PUSHBUTTON      "GetLocalTime",CmdGetLocalTime,128,177,55,15
+END
+
+IDDfrmTestTreeView DIALOGEX 0, 0, 302, 274
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test TreeView"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Index:",Label8,84,175,25,10,0x0
+    CONTROL         "Tree1",trv,"SysTreeView32",WS_TABSTOP | TVS_SHOWSELALWAYS,5,5,212,129
+    CONTROL         "UpDownIndex",UpDownIndex,"msctls_updown32",UDS_SETBUDDYINT | UDS_WRAP | WS_TABSTOP,128,175,10,12
+    PUSHBUTTON      "Set Text",CmdSetText,5,162,70,15
+    PUSHBUTTON      "Set Selected",CmdSetSelected,5,182,70,15
+    PUSHBUTTON      "Remove",CmdRemove,148,182,70,15
+    EDITTEXT        TextIndex,113,175,15,12,ES_READONLY | ES_RIGHT
+    PUSHBUTTON      "Add Child",CmdAddChild,148,162,70,15
+    PUSHBUTTON      "Clear",CmdClear,226,182,70,15
+    EDITTEXT        txtNodeText,79,153,65,17,ES_CENTER
+    PUSHBUTTON      "Add",CmdAddTo,148,143,70,15
+    CONTROL         "Checkboxes",CheckCheckboxes,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,5,77,10,WS_EX_TRANSPARENT
+    GROUPBOX        "Current Info:",Frame2,5,202,291,70,0,WS_EX_TRANSPARENT
+    EDITTEXT        txtCurrentInfo,10,212,281,55,ES_READONLY | ES_MULTILINE | WS_VSCROLL
+    CONTROL         "FullRowSelect",CheckFullRowSelect,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,19,77,10,WS_EX_TRANSPARENT
+    CONTROL         "HotTracking",CheckHotTracking,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,46,77,10,WS_EX_TRANSPARENT
+    CONTROL         "LabelEdit Automatic",CheckLabelEditAutomatic,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,60,77,10,WS_EX_TRANSPARENT
+    CONTROL         "Sorted",CheckSorted,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,101,77,10,WS_EX_TRANSPARENT
+    CONTROL         "SingleSel",CheckSingleSel,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,87,77,10,WS_EX_TRANSPARENT
+    CONTROL         "HideSelection",CheckHideSelection,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,32,77,10,WS_EX_TRANSPARENT
+    CONTROL         "LineStyle RootLines",CheckLineStyleRootLines,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,73,77,10,WS_EX_TRANSPARENT
+    CONTROL         "Enabled",CheckEnabled,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,114,77,10,WS_EX_TRANSPARENT
+    CONTROL         "Visible",CheckVisible,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,128,77,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Set Sel Text",CmdSetSelText,5,143,70,15
+END
+
+IDDfrmTestStatusBar DIALOGEX 0, 0, 266, 186
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test StatusBar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of some methods and properties for StatusBar controls by VBto software.",Label4,0,5,262,25,0x0
+    GROUPBOX        "Panels",Frame3,84,79,178,55,0,WS_EX_TRANSPARENT
+    LTEXT           "Count:",Label3,192,94,25,10,0x0
+    LTEXT           "Text:",Label2,94,113,25,10,0x0
+    LTEXT           "Index:",Label1,94,94,25,10,0x0
+    CONTROL         "UpDownPanelCount",UpDownPanelCount,"msctls_updown32",UDS_SETBUDDYINT | WS_DISABLED | WS_TABSTOP,241,94,10,12
+    CONTROL         "UpDownPanelIndex",UpDownPanelIndex,"msctls_updown32",UDS_SETBUDDYINT | UDS_WRAP | WS_TABSTOP,143,94,10,12
+    EDITTEXT        txtPanelCount,222,94,20,12,ES_READONLY | ES_RIGHT
+    EDITTEXT        txtPanelText,123,113,129,12
+    EDITTEXT        txtPanelIndex,123,94,20,12,ES_READONLY | ES_RIGHT
+    GROUPBOX        "SimpleText",Frame2,84,34,178,40,0,WS_EX_TRANSPARENT
+    EDITTEXT        txtSimpleText,94,49,158,15
+    GROUPBOX        "",Frame4,5,133,257,30,0,WS_EX_TRANSPARENT
+    CONTROL         "Enabled",cbEnabled,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,74,143,50,15,WS_EX_TRANSPARENT
+    CONTROL         "Visible",cbVisible,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,143,45,15,WS_EX_TRANSPARENT
+    GROUPBOX        "Style",Frame5,5,34,74,99,0,WS_EX_TRANSPARENT
+    CONTROL         "Normal",OptionNormal,"Button",BS_AUTORADIOBUTTON | WS_GROUP | BS_LEFTTEXT | WS_TABSTOP,15,84,50,10,WS_EX_TRANSPARENT
+    CONTROL         "Simple",OptionSimple,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT | WS_TABSTOP,15,49,50,10,WS_EX_TRANSPARENT
+END
+
+IDDfrmTestFontProperty DIALOGEX 0, 0, 222, 236
+STYLE STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test ""Font Properties"""
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Test ",FrameTest,5,5,212,124,0,WS_EX_TRANSPARENT
+    LTEXT           "Test Test Test Test Test Test Test Test",LblTest,10,20,198,20,0x0
+    EDITTEXT        EdtTest,10,49,198,30,ES_READONLY
+    PUSHBUTTON      "Command1",CmdTest,10,84,89,30
+    CONTROL         "Check1",CheckTest,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,113,84,94,20,WS_EX_TRANSPARENT
+    CONTROL         "Option1",OptTest,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,113,103,94,15,WS_EX_TRANSPARENT
+    GROUPBOX        "Press any button:",Frame1,5,133,212,99,0,WS_EX_TRANSPARENT
+    RTEXT           "*.Font.Name =",Label2,20,213,50,10,0x0
+    CONTROL         "Strikethrough",cbStrikethrough,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,177,55,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Size = Size-2",CmdSizeMinus,79,187,65,15
+    PUSHBUTTON      "Size = Size+2",CmdSizePlus,10,187,65,15
+    CONTROL         "Underline",cbUnderline,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,192,55,10,WS_EX_TRANSPARENT
+    CONTROL         "Bold",cbBold,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,148,55,10,WS_EX_TRANSPARENT
+    CONTROL         "Italic",cbItalic,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,162,55,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "ForeColor=Red",CmdForeColorRed,79,167,65,15
+    PUSHBUTTON      "ForeColor=Yellow",CmdForeColorYellow,10,167,65,15
+    PUSHBUTTON      "BackColor=Blue",CmdBackColorBlue,10,148,65,15
+    PUSHBUTTON      "BackColor=Cyan",CmdBackColorCyan,79,148,65,15
+    COMBOBOX        ComboFontName,79,212,65,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDDfrmTestNamedArgs DIALOGEX 0, 0, 256, 85
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test ""Named Args"""
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Press any button",Label1,10,10,242,15,0x0
+    PUSHBUTTON      "Call mySub(1, ""2"", 3, True)",Command1,5,34,247,20
+    PUSHBUTTON      "Call mySub(sArg2:=""22"", dArg3:=23, bArg4:=False, iArg1:=21)",Command2,5,59,247,20
+END
+
+IDDfrmTestPaint DIALOGEX 0, 0, 196, 217
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test ""Paint"""
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",fraColor,5,177,188,35,0,WS_EX_TRANSPARENT
+    LTEXT           "",lblColor_0,40,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_1,40,198,10,10,WS_BORDER
+    LTEXT           "",label3,11,186,23,23,WS_BORDER
+    LTEXT           "",lblFillColor,20,194,10,10,WS_BORDER
+    LTEXT           "",lblForeColor,15,190,10,10,WS_BORDER
+    LTEXT           "",lblColor_2,51,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_3,51,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_4,62,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_5,62,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_6,73,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_7,73,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_8,84,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_9,84,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_10,95,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_11,95,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_12,106,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_13,106,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_14,118,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_15,118,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_16,129,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_17,129,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_18,140,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_19,140,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_20,151,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_21,151,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_22,162,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_23,162,198,10,10,WS_BORDER
+    LTEXT           "",lblColor_24,172,186,10,10,WS_BORDER
+    LTEXT           "",lblColor_25,172,198,10,10,WS_BORDER
+    GROUPBOX        "",fraTools,5,25,134,150,0,WS_EX_TRANSPARENT
+    GROUPBOX        "",fraOptFill,103,30,29,46,0,WS_EX_TRANSPARENT
+    CONTROL         "",shpRect_2,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,109,64,17,6, WS_EX_TRANSPARENT
+    CONTROL         "",shpRect_1,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,109,51,17,6, WS_EX_TRANSPARENT
+    CONTROL         "",shpRect_0,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,109,38,17,6, WS_EX_TRANSPARENT
+    LTEXT           "",lblFill,106,36,23,11,WS_BORDER,WS_EX_TRANSPARENT
+    GROUPBOX        "",fraBrush,44,30,27,63,0,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_4,imgBrush_4,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,49,60,6,6,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_5,imgBrush_5,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,61,60,6,6,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_7,imgBrush_7,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,61,71,6,6,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_6,imgBrush_6,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,49,71,6,6,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_2,imgBrush_2,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,49,49,6,6,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_3,imgBrush_3,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,61,49,6,6,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_0,imgBrush_0,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,49,38,6,6,WS_EX_TRANSPARENT
+    LTEXT           "",lblBrush,47,36,10,10,WS_BORDER,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_1,imgBrush_1,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,61,38,6,6,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_8,imgBrush_8,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,49,82,6,6,WS_EX_TRANSPARENT
+    CONTROL frmTestPaint_imgBrush_9,imgBrush_9,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,61,82,6,6,WS_EX_TRANSPARENT
+    GROUPBOX        "",fraOptDot,74,30,27,50,0,WS_EX_TRANSPARENT
+    CONTROL         "",shpDot_7,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,90,69,6,6, WS_EX_TRANSPARENT
+    CONTROL         "",shpDot_6,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,80,69,5,5, WS_EX_TRANSPARENT
+    CONTROL         "",shpDot_5,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,90,59,4,4, WS_EX_TRANSPARENT
+    CONTROL         "",shpDot_4,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,80,59,4,4, WS_EX_TRANSPARENT
+    CONTROL         "",shpDot_3,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,91,50,3,3, WS_EX_TRANSPARENT
+    CONTROL         "",shpDot_2,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,81,50,2,2, WS_EX_TRANSPARENT
+    CONTROL         "",shpDot_1,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,92,40,2,2, WS_EX_TRANSPARENT
+    CONTROL         "",shpDot_0,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,82,41,1,1, WS_EX_TRANSPARENT
+    LTEXT           "",lblDot,77,36,10,10,WS_BORDER,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,7,45,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_0,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,7,30,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_9,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,91,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_8,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,7,137,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_6,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,7,106,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_7,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,7,122,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,45,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_5,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,7,91,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_4,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,7,60,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_2,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,60,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_10,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_ICON | WS_TABSTOP,7,76,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_11,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,106,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_12,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,122,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_13,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,137,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_14,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,76,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_15,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,30,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_17,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,23,153,16,15,WS_EX_TRANSPARENT
+    CONTROL         "",optTools_16,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_BITMAP | WS_TABSTOP,7,153,16,15,WS_EX_TRANSPARENT
+END
+
+IDDfrmTestTabStrip_SSTab1_Page1 DIALOGEX 0, 0, 196, 37
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tab 0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Command1",Command1,39,17,55,15
+END
+
+IDDfrmTestTabStrip_SSTab1_Page2 DIALOGEX 0, 0, 196, 37
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tab 1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Check1",Check1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,17,89,15,WS_EX_TRANSPARENT
+END
+
+IDDfrmTestTabStrip_SSTab1_Page3 DIALOGEX 0, 0, 196, 37
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tab 2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Label5",Label5,118,13,70,15,0x0
+END
+
+IDDfrmTestTabStrip DIALOGEX 0, 0, 266, 365
+STYLE STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test TabStrip"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of some methods and properties for ComctlLib.TabStrip controls by VBto software.",Label4,5,5,257,20,0x0
+    CONTROL         "TabStrip1",TabStrip1,"SysTabControl32",WS_TABSTOP,5,34,257,104
+    GROUPBOX        "",Frame1,10,49,247,79,0,WS_EX_TRANSPARENT
+    LTEXT           "SelectedItem.Index = ",LabelIndex,20,76,202,10,0x0
+    LTEXT           "Count =",LabelCount,20,64,148,10,0x0
+    LTEXT           "SelectedItem.Caption = ",LabelCaption,20,89,217,10,0x0
+    LTEXT           "SelectedItem.Tag = ",LabelTag,20,113,217,10,0x0
+    LTEXT           "SelectedItem.Default = ",LabelDefault,20,101,217,10,0x0
+    GROUPBOX        "Add/Insert Tab",Frame2,5,148,148,79,0,WS_EX_TRANSPARENT
+    LTEXT           "Index",Label1,123,177,25,10,0x0
+    LTEXT           "Caption",Label2,64,177,45,10,0x0
+    EDITTEXT        txtAddCaption,64,192,55,12
+    PUSHBUTTON      "Add",CmdAdd3,10,202,45,15
+    PUSHBUTTON      "Add",CmdAdd2,10,182,45,15
+    PUSHBUTTON      "Add",CmdAdd1,10,162,45,15
+    EDITTEXT        txtAddIndex,123,202,20,12,ES_RIGHT
+    GROUPBOX        "Remove Tab",Frame3,158,148,104,79,0,WS_EX_TRANSPARENT
+    LTEXT           "Index",Label3,222,167,25,10,0x0
+    PUSHBUTTON      "Clear",CmdClear,162,202,45,15
+    PUSHBUTTON      "Remove",CmdRemove,162,182,45,15
+    EDITTEXT        txtRemoveIndex,222,182,20,12,ES_RIGHT
+    GROUPBOX        "Current Tab",Frame4,5,231,257,60,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "new SelectedItem.Index = ",CmdNewSelectedItemIndex,10,266,104,15
+    EDITTEXT        txtNewSelectedItemIndex,123,266,20,12,ES_RIGHT
+    PUSHBUTTON      "new SelectedItem.Caption = ",CmdNewSelectedItemCaption,10,246,104,15
+    EDITTEXT        txtNewSelectedItemCaption,123,246,129,12
+    CONTROL         "",frmTestTabStrip_SSTab1,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,5,300,202,55
+END
+
+IDDfrmTestPrinter DIALOGEX 0, 0, 161, 106
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Printer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of some Printer properties and methods by VBto software.",Label3,5,5,153,25,0x0
+    PUSHBUTTON      "Print (page 1 only)",cmdPrint,43,79,74,20
+    CONTROL         "print page 'B'",CheckBoxPageB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,54,79,15,WS_EX_TRANSPARENT
+    CONTROL         "print page 'A'",CheckBoxPageA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,34,74,15,WS_EX_TRANSPARENT
+END
+
+IDDfrmTestPropertyGetLet DIALOGEX 0, 0, 177, 148
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Form Test Property Get, Property Let"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of """"Property Get"""" && """"Property Let"""" by VBto software.",Label0,5,5,168,25,0x0
+    LTEXT           "Property """"FirstName"""":",Label1,5,34,70,10,0x0
+    LTEXT           "Property """"LastName"""":",Label2,5,49,70,10,0x0
+    LTEXT           "Property """"Salary"""":",Label3,5,64,70,10,0x0
+    PUSHBUTTON      "All Properties Let && Get",cmdPropertyLetGet,45,84,89,15
+    EDITTEXT        EdtFirstName,84,34,89,12
+    EDITTEXT        EdtLastName,84,49,89,12
+    EDITTEXT        EdtSalary,84,64,89,12
+    EDITTEXT        TextOutputInformation,5,103,168,40,NOT WS_VISIBLE | ES_READONLY | ES_MULTILINE
+END
+
+IDDfrmTestInputBox DIALOGEX 0, 0, 228, 244
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test InputBox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of various types of raising InputBox dialog by VBto software.",Label1,5,5,217,20,0x0
+    GROUPBOX        "Test InputBox ",Frame1,5,30,217,207,0,WS_EX_TRANSPARENT
+    LTEXT           "Prompt:",Label2,15,46,30,10,0x0
+    LTEXT           "Title:",Label3,15,65,30,11,0x0
+    LTEXT           "Default:",Label4,15,85,30,10,0x0
+    LTEXT           "Result:",Label5,15,218,30,10,0x0
+    LTEXT           "XYPos:",Label6,15,105,40,10,0x0
+    PUSHBUTTON      "InputBox((Prompt)",CmdInputBox1,15,128,198,15
+    EDITTEXT        txtPrompt,49,44,163,12
+    EDITTEXT        txtTitle,49,64,163,12
+    EDITTEXT        txtDefault,49,84,163,12
+    EDITTEXT        txtResult,49,217,163,12
+    PUSHBUTTON      "InputBox((Prompt, Title)",CmdInputBox2,15,148,198,15
+    PUSHBUTTON      "InputBox((Prompt, Title, DefaultValue)",CmdInputBox3,15,167,198,15
+    PUSHBUTTON      "InputBox((Prompt, Title, DefaultValue, XPos, YPos)",CmdInputBox5,15,187,198,15
+    EDITTEXT        txtXPos,49,103,25,12
+    EDITTEXT        txtYPos,84,103,25,12
+END
+
+IDDfrmTestAutoDim DIALOGEX 0, 0, 220, 85
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test ""Auto Dim"""
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "This Test demonstrates the automatic creation of local variable declarations. The test is performed successfully, if translation was run without errors.",LabelResults,4,10,212,45,0x0
+    PUSHBUTTON      "Close",CmdClose,85,64,50,15
+    EDITTEXT        TextInvisible,5,64,50,12,NOT WS_VISIBLE
+END
+
+IDDfrmTestControlArrays DIALOGEX 0, 0, 221, 316
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Control Arrays test"
+MENU frmTestControlArraysMainMenu
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Frame1 (Index=0)",Frame1_0,5,15,104,237,0,WS_EX_TRANSPARENT
+    LTEXT           "Label1",Label1_0,20,30,84,8,0x0
+    CONTROL frmTestControlArrays_Image1_0,Image1_0,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,20,192,68,33,WS_EX_TRANSPARENT
+    CONTROL         "Slider1_0",Slider1_0,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,20,69,74,20,WS_EX_TRANSPARENT
+    CONTROL         "ProgressBar1_0",ProgressBar1_0,"msctls_progress32",WS_BORDER,20,113,74,10
+    PUSHBUTTON      "Command1",Command1_0,20,231,74,15
+    EDITTEXT        EdtText_0,20,44,74,15
+    CONTROL         "Check1",Check1_0,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,128,74,15,WS_EX_TRANSPARENT
+    CONTROL frmTestControlArrays_Picture1_0,Picture1_0,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,20,148,74,40,WS_EX_TRANSPARENT
+    SCROLLBAR       HScroll1_0,20,94,74,10,WS_TABSTOP
+    GROUPBOX        "Frame1(Index=3)",Frame1_3,113,15,104,237,0,WS_EX_TRANSPARENT
+    RTEXT           "Label1 ",Label1_3,128,30,74,8,0x0
+    CONTROL frmTestControlArrays_Image1_3,Image1_3,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,128,192,68,33,WS_EX_TRANSPARENT
+    CONTROL         "Slider1_3",Slider1_3,"msctls_trackbar32",TBS_BOTH | TBS_AUTOTICKS | WS_TABSTOP,128,64,74,25,WS_EX_TRANSPARENT
+    CONTROL         "ProgressBar1_3",ProgressBar1_3,"msctls_progress32",PBS_SMOOTH | WS_BORDER,128,113,74,10
+    PUSHBUTTON      "Command1",Command1_3,128,231,74,15
+    EDITTEXT        EdtText_3,128,44,74,15,ES_CENTER
+    CONTROL         "Check1",Check1_3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,128,128,74,15,WS_EX_TRANSPARENT| WS_EX_RIGHT
+    CONTROL frmTestControlArrays_Picture1_3,Picture1_3,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,128,148,74,40,WS_EX_TRANSPARENT
+    SCROLLBAR       HScroll1_3,128,94,74,10,WS_TABSTOP
+    EDITTEXT        EdtEvents,5,290,212,20,ES_READONLY
+    GROUPBOX        "Option Buttons",Frame2,5,256,212,30,0,WS_EX_TRANSPARENT
+    CONTROL         "RB(0)",Option1_0,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,267,40,13,WS_EX_TRANSPARENT
+    CONTROL         "RB(1)",Option1_1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,66,267,40,13,WS_EX_TRANSPARENT
+    CONTROL         "RB(2)",Option1_2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,116,267,40,13,WS_EX_TRANSPARENT
+    CONTROL         "RB(3)",Option1_3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,167,267,40,13,WS_EX_TRANSPARENT
+END
+
+IDDfrmTestOnError DIALOGEX 0, 0, 323, 80
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test OnError"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "12  / ",Label1,5,59,45,13,0x0
+    LTEXT           "  = ",LabelResult,84,59,232,13,0x0
+    CTEXT           "The sample demonstrates a conversion of various types <On Error > construction",Label2,5,5,316,20,0x0
+    CONTROL         "UpDownDenom",UpDownDenom,"msctls_updown32",UDS_SETBUDDYINT | WS_TABSTOP,69,59,10,13
+    EDITTEXT        TextDenom,54,59,15,13,ES_READONLY | ES_RIGHT
+    COMBOBOX        ComboTest,5,39,89,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDDfrmTestListView DIALOGEX 0, 0, 310, 276
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test ListView"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "ListView1",ListView1,"SysListView32",WS_BORDER | LVS_EDITLABELS | WS_TABSTOP | LVS_SHOWSELALWAYS | LVS_REPORT | LVS_SINGLESEL,79,10,227,119
+    PUSHBUTTON      "Add Item",CmdAddItem,172,153,65,15
+    GROUPBOX        "View ",FrameView,5,10,65,60,0,WS_EX_TRANSPARENT
+    CONTROL         "Icon",OptionlvwIcon,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,10,20,45,10,WS_EX_TRANSPARENT
+    CONTROL         "List",OptionlvwList,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,10,31,40,10,WS_EX_TRANSPARENT
+    CONTROL         "Report",OptionlvwReport,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,10,43,45,10,WS_EX_TRANSPARENT
+    CONTROL         "SmallIcon",OptionlvwSmallIcon,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,10,54,45,10,WS_EX_TRANSPARENT
+    CONTROL         "MultiSelect",CheckMultiSelect,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,74,70,10,WS_EX_TRANSPARENT
+    CONTROL         "Checkboxes",CheckCheckboxes,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,85,65,10,WS_EX_TRANSPARENT
+    CONTROL         "GridLines",CheckGridLines,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,96,65,10,WS_EX_TRANSPARENT
+    CONTROL         "FullRowSelect",CheckFullRowSelect,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,106,65,10,WS_EX_TRANSPARENT
+    CONTROL         "Sorted",CheckSorted,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,128,60,10,WS_EX_TRANSPARENT
+    CONTROL         "HideSelection",CheckHideSelection,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,117,65,10,WS_EX_TRANSPARENT
+    GROUPBOX        "SortOrder",FrameSortOrder,10,141,65,40,0,WS_EX_TRANSPARENT
+    CONTROL         "Ascending",OptionlvwAscending,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,151,50,10,WS_EX_TRANSPARENT
+    CONTROL         "Descending",OptionlvwDescending,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,15,166,50,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Insert 2 Item",CmdInsertItem,172,172,65,15
+    PUSHBUTTON      "Delete Item",CmdDeleteItem,241,172,65,15
+    EDITTEXT        TextNewItem,89,153,79,12
+    PUSHBUTTON      "Get Item",CmdGetItem,172,212,65,15
+    PUSHBUTTON      "Get Info",CmdGetInfo,172,133,65,15
+    PUSHBUTTON      "Set Cur Item",CmdSetCurItem,172,192,65,15
+    GROUPBOX        "Item Index   ( >=1 )",Frame1,89,172,79,38,0,WS_EX_TRANSPARENT
+    EDITTEXT        TextItemIndex,123,187,20,12,ES_READONLY | ES_RIGHT
+    CONTROL         "UpDownItemIndex",UpDownItemIndex,"msctls_updown32",UDS_SETBUDDYINT | UDS_WRAP | WS_TABSTOP,142,187,10,12
+    GROUPBOX        "Current Style:",Frame2,5,231,301,40,0,WS_EX_TRANSPARENT
+    EDITTEXT        TextCurrentStyle,10,241,291,25,ES_READONLY | ES_MULTILINE
+    PUSHBUTTON      "Clear",CmdClear,241,133,65,15
+    PUSHBUTTON      "Checked Item",CmdCheckedItem,241,192,65,15
+END
+
+IDDfrmTestReDim DIALOGEX 0, 0, 286, 213
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test ReDim"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of all ReDim VB6 constructions by VBto software.",Label3,5,5,276,15,0x0
+    PUSHBUTTON      "Run Test",CommandRunTest,108,192,60,15
+    LISTBOX         ListBoxEvents,5,25,276,162,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+END
+
+IDDfrmTestModuleClass DIALOGEX 0, 0, 228, 119
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Module & Class"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "X=Y=Z=",Label1,10,44,35,10,0x0
+    PUSHBUTTON      "Call Function from Module 1",CmdCallFunctionFromModule1,5,10,104,20
+    PUSHBUTTON      "Call Sub from Module 2",CmdCallSubFromModule2,118,10,104,20
+    PUSHBUTTON      "Set  (X,Y,Z)  to Module 3",CmdSetXYZtoModule3,5,64,104,20
+    EDITTEXT        TextXYZ,49,44,20,12
+    PUSHBUTTON      "Get  Dist(X,Y,Z)  from Module 3",CmdGetDistfromModule3,118,64,104,20
+    PUSHBUTTON      "Set  (X,Y,Z)  to Class 1 && Get  Dist(X,Y,Z)  from Class 1",CmdTestClass1,5,94,217,20
+END
+
+IDDfrmTestExpression DIALOGEX 0, 0, 188, 263
+STYLE STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Expression"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Test",CmdTest,69,246,50,15
+    LISTBOX         ListBoxResults,5,5,178,234,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+END
+
+IDDfrmTestLike DIALOGEX 0, 0, 188, 130
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Like"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         ListBoxResults,5,5,178,98,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+    PUSHBUTTON      "Test",CmdTest,69,108,50,15
+END
+
+IDDfrmTestTypeCast DIALOGEX 0, 0, 213, 214
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Type Cast"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Test Type Cast",CmdTestTypeCast,69,192,74,15
+    LISTBOX         ListBoxResults,5,5,202,178,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+END
+
+IDDfrmTestCursor DIALOGEX 0, 0, 100, 172
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Cursor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Select Cursor:",Label1,5,5,89,10,0x0
+    LISTBOX         ListCurPointer,5,20,89,146,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+END
+
+IDDfrmTestGDI DIALOGEX 0, 0, 313, 247
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test GDI"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",Picture1,"Static",WS_TABSTOP | WS_BORDER,5,5,304,164
+    PUSHBUTTON      "Clear",CmdClear,274,177,35,17
+    GROUPBOX        "Timer ",Frame1,5,172,60,70,0,WS_EX_TRANSPARENT
+    CONTROL         "Enabled",CheckTimerEnabled,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,182,40,10,WS_EX_TRANSPARENT
+    CONTROL         "500 ms",rbTimerInterval_2,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,226,40,10,WS_EX_TRANSPARENT
+    CONTROL         "100 ms",rbTimerInterval_1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,15,212,40,10,WS_EX_TRANSPARENT
+    CONTROL         "10 ms",rbTimerInterval_0,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,15,197,40,10,WS_EX_TRANSPARENT
+    GROUPBOX        "",Frame2,69,172,114,71,0,WS_EX_TRANSPARENT
+    CONTROL         "Line",CheckLine,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,182,40,10,WS_EX_TRANSPARENT
+    CONTROL         "PSet",CheckPSet,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,182,30,10,WS_EX_TRANSPARENT
+    CONTROL         "Rectangle",CheckRectangle,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,197,55,10,WS_EX_TRANSPARENT
+    CONTROL         "FillRectangle",CheckFillRectangle,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,212,55,10,WS_EX_TRANSPARENT
+    CONTROL         "Circle",CheckCircle,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,212,30,10,WS_EX_TRANSPARENT
+    CONTROL         "Arc",CheckArc,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,197,30,10,WS_EX_TRANSPARENT
+    GROUPBOX        "",Frame3,187,172,84,71,0,WS_EX_TRANSPARENT
+    RTEXT           "FillStyle:",Label2,197,213,35,8,0x0,WS_EX_TRANSPARENT
+    RTEXT           "DrawWidth:",Label3,192,184,40,8,0x0,WS_EX_TRANSPARENT
+    RTEXT           "DrawStyle:",Label4,195,199,37,8,0x0,WS_EX_TRANSPARENT
+    COMBOBOX        ComboFillStyle,236,212,30,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ComboDrawWidth,236,182,30,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ComboDrawStyle,236,197,30,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDDfrmTestMisc_SSTab1_Page1 DIALOGEX 0, 0, 285, 120
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Dir"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Dir",CmdDir,15,59,60,15
+    EDITTEXT        TextDir,79,94,198,15
+    EDITTEXT        TextMaskFiles,79,59,198,15
+    EDITTEXT        TextChDir,143,30,134,15,ES_READONLY
+    PUSHBUTTON      "MkDir",CmdMkDir,15,84,60,15
+    PUSHBUTTON      "RmDir",CmdRmDir,15,104,60,15
+    PUSHBUTTON      "CurDir",CmdCurDir,15,30,60,15
+    PUSHBUTTON      "ChDir",CmdChDir,79,30,60,15
+END
+
+IDDfrmTestMisc_SSTab1_Page2 DIALOGEX 0, 0, 285, 120
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        TextMaskFile,79,30,45,55,WS_DISABLED
+    PUSHBUTTON      "Create File",CmdCreateFile,15,30,60,15
+    PUSHBUTTON      "Kill files",CmdKillFiles,15,89,60,15
+    PUSHBUTTON      "FileCopy",CmdFileCopy,15,69,60,15
+    PUSHBUTTON      "Read File",CmdReadTextFile,15,49,60,15
+END
+
+IDDfrmTestMisc_SSTab1_Page3 DIALOGEX 0, 0, 285, 120
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Shell"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Beep",CmdBeep,15,49,94,15
+    PUSHBUTTON      "Shell ""explorer.exe""",CmdShell,15,30,94,15
+END
+
+IDDfrmTestMisc DIALOGEX 0, 0, 301, 273
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Miscellaneous"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion some """"API"""" functions by VBto software",Label1,5,5,291,10,0x0
+    CONTROL         "",frmTestMisc_SSTab1,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,5,25,291,138
+    PUSHBUTTON      "Print to Debug",CmdTestPrintToDebug,69,222,60,15
+    PUSHBUTTON      "Print to File",CmdTestPrintToFile,5,222,60,15
+    PUSHBUTTON      "Print to Form",CmdTestPrintToForm,133,222,60,15
+    GROUPBOX        "Command Line Arguments",FrameCommandLineArguments,5,172,262,40,0,WS_EX_TRANSPARENT
+    EDITTEXT        TextCommandLineArguments,10,187,247,15,ES_READONLY
+END
+
+IDDfrmTestArray DIALOGEX 0, 0, 344, 141
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Arrays"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of arrays of variables by VBto software.",Label3,39,5,262,10,0x0
+    EDITTEXT        TextResult,2,20,340,99,ES_READONLY | ES_MULTILINE
+    PUSHBUTTON      "Recalc Array 1",CmdRecalcArray1,2,123,65,15
+    PUSHBUTTON      "Recalc Array 2",CmdRecalcArray2,69,123,65,15
+END
+
+IDDfrmTestCommonDialog DIALOGEX 0, 0, 340, 233
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test CommonDialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstarates a conversion of followning properties: InitDir, FileName, Filter, FilterIndex, DefaultExt, DialogTitle.",LabelTestCommonDialog,5,5,330,20,0x0
+    GROUPBOX        "Test CommonDialog",FrameTestCommonDialog,5,30,330,65,0,WS_EX_TRANSPARENT
+    LTEXT           " CommonDialog default:",Label1,15,44,202,10,0x0
+    LTEXT           "Tag; InitDir; FileName; Filter; FilterIndex; DefaultExt; DialogTitle",Label2,15,64,202,20,0x0
+    GROUPBOX        "Test on ""Save File""",Frame2,5,103,330,40,0,WS_EX_TRANSPARENT
+    EDITTEXT        TextSaveFile,10,118,300,13,ES_READONLY
+    PUSHBUTTON      "...",cmdSaveFile,310,118,20,13
+    GROUPBOX        "Test on ""Open File""",Frame1,5,153,330,74,0,WS_EX_TRANSPARENT
+    LTEXT           "FilterIndex",Label3,10,187,35,10,0x0
+    LTEXT           "Filter",Label4,10,167,35,10,0x0
+    COMBOBOX        cmbFilterIndex,49,185,30,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        txtFilter,49,167,281,13
+    PUSHBUTTON      "...",cmdOpenFile,310,203,20,13
+    EDITTEXT        TextOpenFile,10,203,300,13,ES_READONLY
+END
+
+IDDfrmTestLen DIALOGEX 0, 0, 235, 215
+STYLE STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Len"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "",LabelParam1,44,59,70,10,0x0
+    LTEXT           "Param",Label2,69,44,35,10,0x0
+    LTEXT           "Len(Param)",Label4,118,44,50,10,0x0
+    CTEXT           "",LabelParam2,44,74,70,10,0x0
+    CTEXT           "",LabelParam3,44,89,70,10,0x0
+    CTEXT           "",LabelParam4,44,108,70,10,0x0
+    CTEXT           "",LabelParam5,44,123,70,10,0x0
+    CTEXT           "",LabelParam6,44,138,70,10,0x0
+    CTEXT           "",LabelParam7,44,153,70,10,0x0
+    CTEXT           "",LabelParam8,44,167,70,10,0x0
+    CTEXT           "",LabelParam9,44,182,70,10,0x0
+    CTEXT           "",LabelParam10,44,197,70,10,0x0
+    CTEXT           "The sample demonstrates a conversion of various types of Len() functions by VBto software.",Label3,5,5,222,25,0x0
+    EDITTEXT        LenParam1,118,59,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam2,118,74,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam3,118,89,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam4,118,108,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam5,118,123,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam6,118,138,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam7,118,153,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam8,118,167,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam9,118,182,45,12,ES_READONLY | ES_CENTER
+    EDITTEXT        LenParam10,118,197,45,12,ES_READONLY | ES_CENTER
+END
+
+IDDfrmTestTimer DIALOGEX 0, 0, 237, 184
+STYLE STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Timer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of Timer properties and Event-handlers by VBto software.",Label3,10,5,222,25,0x0
+    GROUPBOX        "Test1",Frame1,5,34,227,74,0,WS_EX_TRANSPARENT
+    LTEXT           "Counter",Label2,123,49,40,10,0x0
+    LTEXT           "Interval [msec]",Label1,64,49,50,10,0x0
+    PUSHBUTTON      "Reset",CommandReset,182,64,40,32
+    CONTROL         "Timer2",cbTimer2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,81,45,15,WS_EX_TRANSPARENT
+    EDITTEXT        txtTimer2,123,84,50,12,ES_READONLY
+    EDITTEXT        txtTimer2Interval,64,84,45,12,WS_DISABLED | ES_RIGHT
+    EDITTEXT        txtTimer1Interval,64,64,45,12,WS_DISABLED | ES_RIGHT
+    EDITTEXT        txtTimer1,123,64,50,12,ES_READONLY
+    CONTROL         "Timer1",cbTimer1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,63,45,15,WS_EX_TRANSPARENT
+    GROUPBOX        "Test ""Clock""",Frame2,5,118,227,60,0,WS_EX_TRANSPARENT
+    CTEXT           "00:00",IDC_TIME,15,133,111,38,0x0
+    PUSHBUTTON      "Reset",CmdReset,182,135,40,18
+    PUSHBUTTON      "Start",CmdStart,133,135,40,18
+END
+
+IDDfrmTestSelect DIALOGEX 0, 0, 306, 298
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Select Case"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "",LabelMess,39,278,262,15,WS_BORDER
+    LTEXT           "VB6 source code:",Label2,10,79,74,30,0x0
+    LTEXT           "Test Expression:",Label6,10,167,70,10,0x0
+    LTEXT           "Expression List:",Label7,10,187,70,15,0x0
+    LTEXT           "Result:",Label8,10,280,25,10,0x0
+    CTEXT           "The sample demonstrates a conversion of various types <Select-Case> construction.",Label1,5,5,296,30,0x0
+    LTEXT           "Test N",Label9,10,46,30,10,0x0
+    EDITTEXT        TextSelect,89,44,212,119,ES_READONLY | ES_MULTILINE
+    COMBOBOX        ComboSelect,89,167,212,103,CBS_SIMPLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ComboTestNumber,49,44,35,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDDfrmTestDoWhile DIALOGEX 0, 0, 188, 204
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Do ... While ..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of all loop VB6 constructions by VBto software. Appearing """"OK"""" after conversion means that code was converted successfully.",Label1,5,5,178,35,0x0
+    LISTBOX         ListBoxResults,5,44,178,138,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+    PUSHBUTTON      "Run All Tests",CmdRunAllTest,59,187,70,15
+END
+
+IDDForm3_SSTab1_Page1 DIALOGEX 0, 0, 241, 86
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tab 0 Caption"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Frame1 Caption",Frame1,54,17,183,60,0,WS_EX_TRANSPARENT
+    CONTROL         "ProgressBar1",ProgressBar1,"msctls_progress32",WS_BORDER,69,57,158,10
+    CONTROL         "Slider1",Slider1,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,64,27,168,25,WS_EX_TRANSPARENT
+    CONTROL         "ProgressBar2",ProgressBar2,"msctls_progress32",PBS_VERTICAL | WS_BORDER,10,17,10,60
+    CONTROL         "Slider2",Slider2,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_AUTOTICKS | WS_TABSTOP,25,13,26,70,WS_EX_TRANSPARENT
+END
+
+IDDForm3_SSTab1_Page2 DIALOGEX 0, 0, 241, 86
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tab 1 Caption"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TreeView:",Label3,15,8,94,10,0x0
+    LTEXT           "ListView (mode Icon):",Label4,123,8,94,10,0x0
+    CONTROL         "Tree1",TreeView1,"SysTreeView32",WS_TABSTOP | TVS_EDITLABELS,15,22,94,50
+    CONTROL         "ListView1",ListView1,"SysListView32",WS_BORDER | WS_TABSTOP | LVS_SINGLESEL,123,22,94,50
+END
+
+IDDForm3_SSTab1_Page3 DIALOGEX 0, 0, 241, 86
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tab 2 Caption"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Param 1:",Label2,10,22,30,10,0x0
+    CONTROL         "UpDownParam1",UpDownParam1,"msctls_updown32",UDS_SETBUDDYINT | WS_TABSTOP,74,22,10,12
+    EDITTEXT        TextParam1,49,22,25,12,ES_RIGHT
+    GROUPBOX        "Frame2",Frame2,118,13,104,70,0,WS_EX_TRANSPARENT
+    CTEXT           "Test 3",Label1,133,27,74,10,WS_BORDER
+    PUSHBUTTON      "",Command2,172,42,35,30,BS_ICON
+    PUSHBUTTON      "",Command1,133,42,35,30,BS_ICON
+    CONTROL         "Check1",Check1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,47,55,10,WS_EX_TRANSPARENT| WS_EX_RIGHT
+    CONTROL         "Check2",Check2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,62,55,10,WS_EX_TRANSPARENT
+END
+
+IDDForm3 DIALOGEX 0, 0, 259, 159
+STYLE STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW | WS_EX_TOOLWINDOW
+CAPTION "VBto Converter Test Form3"
+MENU Form3MainMenu
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",Form3_SSTab1,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,5,30,247,104
+END
+
+IDDForm2 DIALOGEX 0, 0, 262, 157
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_MINIMIZEBOX | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VBto Converter Test Form2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TreeView",Label1,5,25,65,10,0x0
+    LTEXT           "ListView  (Report mode)",Label2,108,25,114,10,0x0
+    CONTROL         "ListView1",ListView1,"SysListView32",WS_BORDER | WS_TABSTOP | LVS_REPORT | LVS_SINGLESEL,103,39,124,55
+    CONTROL         "ProgressBar1",ProgressBar1,"msctls_progress32",WS_BORDER,5,128,217,10
+    CONTROL         "Slider2",Slider2,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_AUTOTICKS | WS_TABSTOP,231,20,26,119,WS_EX_TRANSPARENT
+    CONTROL         "Slider1",Slider1,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,5,98,222,20,WS_EX_TRANSPARENT
+    CONTROL         "Tree1",TreeView1,"SysTreeView32",WS_TABSTOP | TVS_EDITLABELS,5,39,94,55
+END
+
+IDDForm1 DIALOGEX 0, 0, 266, 228
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VBto Converter Test Form1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",Shape1,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,25,123,74,45, WS_EX_TRANSPARENT
+    CONTROL         "",Line1,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,103,123,1,39, WS_EX_TRANSPARENT
+    CONTROL         "",Line2,"Static",WS_DISABLED | NOT WS_TABSTOP | SS_GRAYRECT | WS_BORDER,25,172,74,1, WS_EX_TRANSPARENT
+    CONTROL Form1_Image1,Image1,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,113,128,68,49,WS_EX_TRANSPARENT
+    LTEXT           "Timer ->",Label2,113,187,50,10,0x0
+    LTEXT           "Indexed:",Label1_0,5,209,40,10,0x0
+    GROUPBOX        "Frame1",Frame1,113,5,148,114,0,WS_EX_TRANSPARENT
+    LTEXT           "Test",Label1_1,123,20,25,10,0x0
+    EDITTEXT        Text1_1,158,20,65,15
+    CONTROL         "Option1",Option1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | BS_PUSHLIKE | WS_TABSTOP,209,44,40,14,WS_EX_TRANSPARENT
+    CONTROL         "Option2",Option2,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_TABSTOP,209,60,40,14,WS_EX_TRANSPARENT
+    CONTROL         "Check1",Check1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,209,79,40,15,WS_EX_TRANSPARENT
+    GROUPBOX        "Frame2",Frame2,118,39,82,74,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Command2",Command2,123,84,50,15
+    CONTROL         "Option22.Caption",Option22,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,123,59,70,10,WS_EX_TRANSPARENT
+    CONTROL         "Option21.Caption",Option21,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,123,49,70,10,WS_EX_TRANSPARENT
+    CONTROL         "Option23.Caption",Option23,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP | WS_DISABLED,123,69,70,10,WS_EX_TRANSPARENT
+    CONTROL         "Check2",Check2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,209,89,40,15,WS_EX_TRANSPARENT
+    CONTROL         "Check3",Check3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,209,103,40,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "ToolTipText=""Hello""",Command1,5,5,79,15
+    COMBOBOX        Combo1,5,30,99,65,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         List1,5,54,99,34,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+    SCROLLBAR       HScroll1,25,98,79,15,WS_TABSTOP
+    SCROLLBAR       VScroll1,5,98,15,74,SBS_VERT | WS_TABSTOP
+    PUSHBUTTON      "",Command3,89,5,15,15,BS_BITMAP
+    CONTROL Form1_Picture1,Picture1,"Static",WS_TABSTOP | SS_REALSIZEIMAGE | SS_BITMAP|0x20,192,128,70,52,WS_EX_TRANSPARENT
+    EDITTEXT        Text1_0,5,182,50,15,WS_DISABLED
+    PUSHBUTTON      "CommandIndex 0",CommandIndex_0,49,207,65,15
+    PUSHBUTTON      "CommandIndex 5",CommandIndex_5,118,207,70,15
+    PUSHBUTTON      "CommandIndex 7",CommandIndex_7,192,207,70,15
+END
+
+IDDfrmMain DIALOGEX 0, 0, 260, 316
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_MINIMIZEBOX | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VBto Converter Test 2 "
+MENU frmMainMainMenu
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Please, Press Any Button:",Label1,49,5,163,10,0x0
+    PUSHBUTTON      "Test Events",CmdTestEvents,5,123,79,15
+    PUSHBUTTON      "Test ListBox",CmdTestListBox,89,44,79,15
+    PUSHBUTTON      "Test Math",CmdTestMath,172,84,79,15
+    PUSHBUTTON      "Test MsgBox",CmdTestMsgBox,89,64,79,15
+    PUSHBUTTON      "Test String",CmdTestString,172,25,79,15
+    PUSHBUTTON      "Test Visible",CmdTestVisible,5,103,79,15
+    PUSHBUTTON      "Test Form Property",CmdTestFormProperty,5,84,79,15
+    PUSHBUTTON      "Test Form1",CmdTestForm1,5,25,79,15
+    PUSHBUTTON      "Test Form2",CmdTestForm2,5,44,79,15
+    PUSHBUTTON      "Test Form3",CmdTestForm3,5,64,79,15
+    PUSHBUTTON      "Test Do While",CmdTestDoWhile,172,44,79,15
+    PUSHBUTTON      "Test Select",CmdTestSelect,172,64,79,15
+    PUSHBUTTON      "Test Timer",CmdTestTimer,172,103,79,15
+    PUSHBUTTON      "Test Len",CmdTestLen,89,84,79,15
+    PUSHBUTTON      "Test OpenSaveDialog",CmdTestCommonDialog,89,25,79,15
+    PUSHBUTTON      "Test Array",CmdTestArray,172,123,79,15
+    PUSHBUTTON      "Test Miscellaneous",CmdTestMisc,89,103,79,15
+    PUSHBUTTON      "Test GDI",CmdTestGDI,89,123,79,15
+    PUSHBUTTON      "Test Cursor",CmdTestCursor,5,143,79,15
+    PUSHBUTTON      "Test Type Cast",CmdTestTypeCast,89,143,79,15
+    PUSHBUTTON      "Test Like",CmdTestLike,172,143,79,15
+    PUSHBUTTON      "Test Expression",CmdTestExpression,5,162,79,15
+    PUSHBUTTON      "Test Module && Class",CmdTestModuleClass,89,162,79,15
+    PUSHBUTTON      "Test ReDim",CmdTestReDim,172,162,79,15
+    PUSHBUTTON      "Test ListView",CmdTestListView,89,182,79,15
+    PUSHBUTTON      "Test On Error",CmdTestOnError,5,182,79,15
+    PUSHBUTTON      "Test Control Arrays",CmdTestControlArrays,172,182,79,15
+    PUSHBUTTON      "Test AutoDim",CmdTestAutoDim,5,202,79,15
+    PUSHBUTTON      "Test InputBox",CmdTestInputBox,89,202,79,15
+    PUSHBUTTON      "Test Property Get/Let",CmdTestPropertyGetLet,172,202,79,15
+    PUSHBUTTON      "Test Printer",CmdTestPrinter,5,222,79,15
+    PUSHBUTTON      "Test TabStrip",CmdTestTabStrip,89,222,79,15
+    PUSHBUTTON      "Test ""Paint""",CmdTestPaint,89,241,79,15
+    PUSHBUTTON      "Test ""Named Args""",CmdTestNamedArgs,172,222,79,15
+    PUSHBUTTON      "Test ""Font Properties""",CmdTestFontProperty,5,241,79,15
+    PUSHBUTTON      "Test StatusBar",CmdTestStatusBar,172,241,79,15
+    PUSHBUTTON      "Test TreeView",CmdTestTreeView,5,261,79,15
+    PUSHBUTTON      "Test Declare",CmdTestDeclare,89,261,79,15
+    PUSHBUTTON      "Test ""External Consts""",CmdTestExtConsts,172,261,79,15
+    PUSHBUTTON      "Test Date/Time",CmdTestDate,5,281,79,15
+    PUSHBUTTON      "Test FileSystemObject",CmdTestFileSystemObject,89,281,79,15
+END
+
+IDDfrmTestFormProperty DIALOGEX 0, 0, 282, 301
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Form Property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Left, Top",Label1,133,98,35,10,0x0
+    LTEXT           "Width, Height",Label2,192,98,50,10,0x0
+    CTEXT           "The sample demonstrates a conversion of some Form and Controls properties by VBto software.",Label3,20,10,237,25,0x0
+    PUSHBUTTON      "Set WindowState",CmdSetWindowState,10,167,99,15
+    PUSHBUTTON      "Set Caption",CmdSetCaption,10,64,99,15
+    EDITTEXT        TextNewCaption,113,65,163,12
+    PUSHBUTTON      "Get Caption",CmdGetCaption,10,44,99,15
+    PUSHBUTTON      "Get Left Top Width Height",CmdGetLTWH,10,98,99,15
+    EDITTEXT        TextL,113,109,30,12,ES_RIGHT
+    PUSHBUTTON      "Set Left Top Width Height",CmdSetLTWH,10,118,99,15
+    EDITTEXT        TextT,148,109,30,12,ES_RIGHT
+    EDITTEXT        TextW,182,109,30,12,ES_RIGHT
+    EDITTEXT        TextH,217,109,30,12,ES_RIGHT
+    GROUPBOX        "Test Default Property",FrameDefaultProperties,10,192,266,104,0,WS_EX_TRANSPARENT
+    LTEXT           "Label",dpLabel,20,212,55,10,0x0
+    EDITTEXT        dpText,79,207,84,15
+    PUSHBUTTON      "Test Default Properties",dpCommand,182,271,89,20
+    CONTROL         "CheckBox",dpCheck,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,246,74,15,WS_EX_TRANSPARENT
+    CONTROL         "OptionButton",dpOption,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,20,231,70,10,WS_EX_TRANSPARENT
+    COMBOBOX        dpCombo,172,207,74,65,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    SCROLLBAR       HScroll1,192,231,70,10,WS_TABSTOP
+    CONTROL         "dpProgressBar",dpProgressBar,"msctls_progress32",WS_BORDER,113,251,148,10
+    CONTROL         "dpSlider",dpSlider,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,108,231,70,15,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Move Me !!!",CmdMoveMe,10,143,99,15
+END
+
+IDDfrmTestListBox DIALOGEX 0, 0, 292, 305
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test ListBox, ComboBox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Index:",Label2,113,202,25,10,0x0
+    CTEXT           "The sample demonstrates a conversion of some methods and properties for ListBox and ComboBox controls by VBto software. ",Label3,5,5,281,25,0x0
+    LISTBOX         LB,5,39,109,82,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+    COMBOBOX        CB,177,39,109,87,CBS_SIMPLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",CmdAddToLB,20,158,60,15
+    PUSHBUTTON      "Add",CmdAddToCB,217,158,60,15
+    EDITTEXT        TextAdd,89,162,119,17
+    PUSHBUTTON      "Clear",CmdClearLB,20,281,60,15
+    PUSHBUTTON      "Clear",CmdClearCB,217,281,60,15
+    PUSHBUTTON      "Insert",CmdInsertToCB,217,177,60,15
+    PUSHBUTTON      "Insert",CmdInsertToLB,20,177,60,15
+    EDITTEXT        TextIndex,143,202,25,12,ES_READONLY | ES_RIGHT
+    CONTROL         "UpDownIndex",UpDownIndex,"msctls_updown32",UDS_SETBUDDYINT | UDS_WRAP | WS_TABSTOP,167,202,10,12
+    PUSHBUTTON      "Remove",CmdRemoveFromCB,217,256,60,15
+    PUSHBUTTON      "Remove",CmdRemoveFromLB,20,256,60,15
+    PUSHBUTTON      "Get String",CmdGetStringFromCB,217,217,60,15
+    PUSHBUTTON      "Get String",CmdGetStringFromLB,20,217,60,15
+    PUSHBUTTON      "Get Info",CmdGetInfoCB,217,135,60,15
+    PUSHBUTTON      "Get Info",CmdGetInfoLB,20,135,60,15
+    PUSHBUTTON      "Set ListIndex",CmdSetListIndexLB,20,236,60,15
+    PUSHBUTTON      "Set ListIndex",CmdSetListIndexCB,217,236,60,15
+    PUSHBUTTON      "Set String",CmdSetStringLB,20,197,60,15
+    PUSHBUTTON      "Set String",CmdSetStringCB,217,197,60,15
+END
+
+IDDfrmTestMsgBox DIALOGEX 0, 0, 228, 290
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test MsgBox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "The sample demonstrates a conversion of various types of raising MsgBox dialog by VBto software.",Label1,5,5,217,20,0x0
+    PUSHBUTTON      "MsgBox (""Hello N 1"")",Command1,5,59,217,15
+    PUSHBUTTON      "MsgBox ""Hello "" && ""N 2"", vbCritical",Command2,5,79,217,15
+    PUSHBUTTON      "MsgBox (""Hello "" + ""N 3""), vbInformation, ""My Title""",Command3,5,98,217,15
+    PUSHBUTTON      "MsgBox ""Hello N 4"", vbQuestion, ""My Title""",Command4,5,118,217,15
+    PUSHBUTTON      "MsgBox ""Hello N 5"", , ""My Title !!""",Command5,5,138,217,15
+    PUSHBUTTON      "MsgBox(""Prompt (vbYesNo)"", vbYesNo, ""Title"")",Command6,5,167,217,15
+    PUSHBUTTON      "MsgBox(""Prompt (vbYesNoCancel)"", vbYesNoCancel, ""Title"")",Command7,5,187,217,15
+    PUSHBUTTON      "MsgBox(""Prompt (vbOKCancel)"", vbOKCancel, ""Title"")",Command8,5,207,217,15
+    PUSHBUTTON      "MsgBox(""Prompt"", vbRetryCancel + vbExclamation, ""Title"")",Command9,5,226,217,15
+    PUSHBUTTON      "MsgBox(""Prompt"", vbAbortRetryIgnore + vbInformation, ""Title"")",Command10,5,246,217,15
+    PUSHBUTTON      "MsgBox(""Prompt"", vbOKOnly+vbQuestion, ""Title"")",Command11,5,266,217,15
+    PUSHBUTTON      "MsgBox ""Hello N 0""",Command0,5,39,217,15
+END
+
+IDDfrmTestMath DIALOGEX 0, 0, 164, 257
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Math"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Result:",Label2,5,242,35,10,0x0
+    RTEXT           "X:",Label1,5,70,35,10,0x0
+    RTEXT           "Function:",Label4,5,84,35,10,0x0
+    CTEXT           "The sample demonstrates a conversion some mathematical functions by VBto software",Label3,5,5,153,25,0x0
+    CTEXT           "Use separator between integer and fractional parts according to the regional settings of your computer.",Label5,5,34,153,35,0x0
+    EDITTEXT        TextX,49,69,109,12
+    EDITTEXT        TextResult,49,241,109,12,ES_READONLY
+    LISTBOX         ListFunction,49,84,109,154,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+END
+
+IDDfrmTestVisible DIALOGEX 0, 0, 257, 208
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Visible"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Label1",Label1,133,84,119,10,0x0
+    ICON    frmTestVisible_Image1,Image1,59,172,20,20,WS_TABSTOP | SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "The sample demonstrates a conversion of following properties: Visible, Enabled, Locked by Vbto software.",Label3,5,5,252,25,0x0
+    CONTROL         "Visible",CheckVisible,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,34,45,15,WS_EX_TRANSPARENT
+    CONTROL         "Enabled",CheckEnabled,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,34,45,15,WS_EX_TRANSPARENT
+    CONTROL         "Locked",CheckLocked,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,34,45,15,WS_EX_TRANSPARENT
+    EDITTEXT        Text1,133,59,119,15
+    PUSHBUTTON      "Command1",Command1,5,59,124,15
+    CONTROL         "Check1",Check1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,84,40,10,WS_EX_TRANSPARENT
+    CONTROL         "Option1",Option1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,49,84,40,10,WS_EX_TRANSPARENT
+    SCROLLBAR       HScroll1,5,103,119,10,WS_TABSTOP
+    CONTROL         "Slider1",Slider1,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,133,103,119,12,WS_EX_TRANSPARENT
+    COMBOBOX        Combo1,20,118,104,65,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         List1,20,138,104,26,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+    SCROLLBAR       VScroll1,5,118,10,84,SBS_VERT | WS_TABSTOP
+    CONTROL         "ProgressBar1",ProgressBar1,"msctls_progress32",WS_BORDER,133,123,119,10
+    CONTROL         "Tree1",TreeView1,"SysTreeView32",WS_TABSTOP | TVS_EDITLABELS,133,138,119,30
+    CONTROL         "ListView1",ListView1,"SysListView32",WS_BORDER | WS_TABSTOP | LVS_SINGLESEL,133,172,119,30
+    ICON    frmTestVisible_Picture1,Picture1,20,172,30,25,WS_TABSTOP | SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+    GROUPBOX        "Frame1",Frame1,84,172,45,30,0,WS_EX_TRANSPARENT
+    CONTROL         "",CheckV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP | WS_DISABLED,212,38,10,10,WS_EX_TRANSPARENT
+    CONTROL         "",CheckE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP | WS_DISABLED,226,38,10,10,WS_EX_TRANSPARENT
+    CONTROL         "",CheckL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP | WS_DISABLED,241,38,10,10,WS_EX_TRANSPARENT
+    CONTROL         "UpDown1",UpDown1,"msctls_updown32",UDS_SETBUDDYINT | WS_TABSTOP,113,84,10,15
+END
+
+IDDfrmTestEvents DIALOGEX 0, 0, 286, 336
+STYLE WS_POPUP| WS_THICKFRAME | WS_CAPTION | WS_VISIBLE | WS_MAXIMIZEBOX | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test Events"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Label1",Label1,89,30,40,10,0x0
+    CTEXT           "The sample demonstrates a conversion of event handlers for various window controls by VBto software.",Label3,5,5,276,15,0x0
+    CONTROL         "Slider2",Slider2,"msctls_trackbar32",TBS_TOP | TBS_AUTOTICKS | WS_TABSTOP,138,69,99,20,WS_EX_TRANSPARENT
+    CONTROL         "ListViewEvents",ListViewEvents,"SysListView32",WS_BORDER | LVS_EDITLABELS | NOT WS_VISIBLE | WS_TABSTOP | LVS_SHOWSELALWAYS | LVS_REPORT | LVS_SINGLESEL,5,315,276,20
+    PUSHBUTTON      "Command1",Command1,5,49,60,15
+    PUSHBUTTON      "Clear",CommandClear,241,128,40,15
+    EDITTEXT        Text1,5,30,79,12
+    CONTROL         "Slider1",Slider1,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,5,69,124,20,WS_EX_TRANSPARENT
+    SCROLLBAR       HScroll1,5,94,129,10,WS_TABSTOP
+    LISTBOX         ListBoxEvents,5,148,276,178,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+    SCROLLBAR       HScroll2,138,94,94,10,WS_TABSTOP
+    SCROLLBAR       VScroll1,266,30,15,70,SBS_VERT | WS_TABSTOP
+    CONTROL         "Slider3",Slider3,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_AUTOTICKS | WS_TABSTOP,236,25,26,74,WS_EX_TRANSPARENT
+    LISTBOX         List1,138,108,99,34,WS_VSCROLL | WS_TABSTOP | LBS_NOINTEGRALHEIGHT
+    COMBOBOX        Combo1,5,128,129,65,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",Picture1,"Static",WS_TABSTOP | WS_BORDER,241,108,40,10
+    CONTROL         "ProgressBar1",ProgressBar1,"msctls_progress32",WS_BORDER,5,108,129,10
+    GROUPBOX        "Frame1",Frame1,133,25,94,40,0,WS_EX_TRANSPARENT
+    CONTROL         "UpDown1",UpDown1,"msctls_updown32",UDS_SETBUDDYINT | UDS_WRAP | WS_TABSTOP,212,34,10,15
+    CONTROL         "Option2",Option2,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,138,49,45,10,WS_EX_TRANSPARENT
+    CONTROL         "Option1",Option1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,138,36,50,10,WS_EX_TRANSPARENT
+    CONTROL         "Check1",Check1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,74,49,45,15,WS_EX_TRANSPARENT
+END
+
+IDDfrmTestString DIALOGEX 0, 0, 266, 184
+STYLE WS_POPUP| WS_BORDER | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test String"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Source text:",LabelSource,5,50,45,10,0x0
+    RTEXT           "Select Action:",Label2,0,36,50,10,0x0
+    RTEXT           "Param1:",LabelParam1,0,67,50,10,NOT WS_VISIBLE
+    RTEXT           "Param2:",LabelParam2,98,67,94,10,NOT WS_VISIBLE
+    CTEXT           "The sample demonstrates a conversion of string variables by VBto software.",Label3,5,5,252,20,0x0
+    EDITTEXT        TextSource,54,49,207,12
+    COMBOBOX        ComboBoxActionText,54,34,207,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Result",FrameResultText,5,89,257,89,0,WS_EX_TRANSPARENT
+    LTEXT           "",LabelResultText,9,118,247,10,WS_BORDER
+    EDITTEXT        TextResultText,9,103,247,12,ES_READONLY
+    CONTROL         "",CheckResultText,"Button",BS_AUTOCHECKBOX | WS_TABSTOP | WS_DISABLED,9,133,247,10,WS_EX_TRANSPARENT
+    CONTROL         "",OptionResultText,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP | WS_DISABLED,9,143,247,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",CommandResultText,9,154,247,12
+    EDITTEXT        TextParam1,54,66,35,12,NOT WS_VISIBLE
+    EDITTEXT        TextParam2,197,66,65,12,NOT WS_VISIBLE
+END
+
+IDDfrmTestFileSystemObject DIALOGEX 0, 0, 256, 132
+STYLE STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Test FileSystemObject"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Save File",BtnSaveFile,5,5,60,15
+    PUSHBUTTON      "Read File",BtnReadFile,69,5,60,15
+    EDITTEXT        TextLog,5,25,247,99,ES_MULTILINE | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+frmTestVisible_Image1   ICON    DISCARDABLE     "res\\frmTestVisible_Image1.ico"
+frmTestVisible_Picture1 ICON    DISCARDABLE     "res\\frmTestVisible_Picture1.ico"
+frmTestControlArraysMainMenu MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Item0",                       pmIndexedItem_0
+        MENUITEM SEPARATOR
+        MENUITEM "Close\t^X",                       pmIndexedItem_2
+    END
+END
+
+Form3MainMenu MENU DISCARDABLE
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        mnuExit
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Colors",                      mnuColors
+        MENUITEM "Tools\t^T",                       mnuTools
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About...",                    mnuAbout
+    END
+END
+
+frmMainMainMenu MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Form&1",                      mmForm1
+        MENUITEM "Form&2",                      mmForm2
+        MENUITEM "Form&3",                      mmForm3
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      mmClose
+        MENUITEM "E&xit\t^X",                       mmExit
+    END
+END
+
+frmTestControlArraysAccel ACCELERATORS DISCARDABLE
+BEGIN
+       "X", pmIndexedItem_2,		VIRTKEY, CONTROL, NOINVERT
+END
+
+Form3Accel ACCELERATORS DISCARDABLE
+BEGIN
+       "T",        mnuTools,		VIRTKEY, CONTROL, NOINVERT
+END
+
+frmMainAccel ACCELERATORS DISCARDABLE
+BEGIN
+       "X",          mmExit,		VIRTKEY, CONTROL, NOINVERT
+END
+
+frmMain_BackgroundPicture ICON    DISCARDABLE     "res\\frmMain_BackgroundPicture.ico"
+Form1_Image1            BITMAP  DISCARDABLE     "res\\Form1_Image1.bmp"
+Form1_Command3          BITMAP  DISCARDABLE     "res\\Form1_Command3.bmp"
+Form1_Picture1          BITMAP  DISCARDABLE     "res\\Form1_Picture1.bmp"
+Form2_ImageList1_1      BITMAP  DISCARDABLE     "res\\Form2_ImageList1_1.bmp"
+Form2_ImageList1_2      BITMAP  DISCARDABLE     "res\\Form2_ImageList1_2.bmp"
+Form2_ImageList1_3      BITMAP  DISCARDABLE     "res\\Form2_ImageList1_3.bmp"
+Form3_Command2          ICON    DISCARDABLE     "res\\Form3_Command2.ico"
+Form3_Command1          ICON    DISCARDABLE     "res\\Form3_Command1.ico"
+Form3_ImageList1_1      BITMAP  DISCARDABLE     "res\\Form3_ImageList1_1.bmp"
+Form3_ImageList1_2      BITMAP  DISCARDABLE     "res\\Form3_ImageList1_2.bmp"
+frmTestControlArrays_Image1_0 BITMAP  DISCARDABLE     "res\\frmTestControlArrays_Image1_0.bmp"
+frmTestControlArrays_Picture1_0 BITMAP  DISCARDABLE     "res\\frmTestControlArrays_Picture1_0.bmp"
+frmTestControlArrays_Image1_3 BITMAP  DISCARDABLE     "res\\frmTestControlArrays_Image1_3.bmp"
+frmTestControlArrays_Picture1_3 BITMAP  DISCARDABLE     "res\\frmTestControlArrays_Picture1_3.bmp"
+frmTestPaint_imgBrush_4 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_4.bmp"
+frmTestPaint_imgBrush_5 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_5.bmp"
+frmTestPaint_imgBrush_7 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_7.bmp"
+frmTestPaint_imgBrush_6 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_6.bmp"
+frmTestPaint_imgBrush_2 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_2.bmp"
+frmTestPaint_imgBrush_3 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_3.bmp"
+frmTestPaint_imgBrush_0 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_0.bmp"
+frmTestPaint_imgBrush_1 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_1.bmp"
+frmTestPaint_imgBrush_8 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_8.bmp"
+frmTestPaint_imgBrush_9 BITMAP  DISCARDABLE     "res\\frmTestPaint_imgBrush_9.bmp"
+frmTestPaint_optTools_1 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_1.bmp"
+frmTestPaint_optTools_0 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_0.bmp"
+frmTestPaint_optTools_9 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_9.bmp"
+frmTestPaint_optTools_8 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_8.bmp"
+frmTestPaint_optTools_6 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_6.bmp"
+frmTestPaint_optTools_7 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_7.bmp"
+frmTestPaint_optTools_3 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_3.bmp"
+frmTestPaint_optTools_5 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_5.bmp"
+frmTestPaint_optTools_4 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_4.bmp"
+frmTestPaint_optTools_2 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_2.bmp"
+frmTestPaint_optTools_10 ICON    DISCARDABLE     "res\\frmTestPaint_optTools_10.ico"
+frmTestPaint_optTools_11 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_11.bmp"
+frmTestPaint_optTools_12 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_12.bmp"
+frmTestPaint_optTools_13 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_13.bmp"
+frmTestPaint_optTools_14 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_14.bmp"
+frmTestPaint_optTools_15 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_15.bmp"
+frmTestPaint_optTools_17 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_17.bmp"
+frmTestPaint_optTools_16 BITMAP  DISCARDABLE     "res\\frmTestPaint_optTools_16.bmp"
+frmTestPaint_Icon       ICON    DISCARDABLE     "res\\frmTestPaint_Icon.ico"
+frmTestTreeView_trvImages_1 ICON    DISCARDABLE     "res\\frmTestTreeView_trvImages_1.ico"
+frmTestTreeView_trvImages_2 ICON    DISCARDABLE     "res\\frmTestTreeView_trvImages_2.ico"

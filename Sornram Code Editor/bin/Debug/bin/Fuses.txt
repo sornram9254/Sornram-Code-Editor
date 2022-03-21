@@ -1,0 +1,745 @@
+ABW20 20-bit Address bus
+ABW16 16-bit Address bus
+ABW12 12-bit Address bus
+ABW8 8-bit Address bus
+BANDGAPLOW Lowest Bandgap voltage
+BANDGAPHIGH Highest Bandgap voltage
+BBSIZ1K 1K words Boot Block size
+BBSIZ2K 2K words Boot Block size
+BBSIZ4K 4K words Boot Block size
+BORSEN See Datasheet
+BORV20 Brownout reset at 2.0V
+BORV21 Brownout reset at 2.1V
+BORV22 Brownout reset at 2.2V
+BORV24 Brownout reset at 2.4V
+BORV25 Brownout reset at 2.5V
+BORV26 Brownout reset at 2.6V
+BORV27 Brownout reset at 2.7V
+BORV28 Brownout reset at 2.8V
+BORV29 Brownout reset at 2.85V
+BORV40 Brownout reset at 4.0V
+BORV42 Brownout reset at 4.2V
+BORV43 Brownout reset at 4.3V
+BORV45 Brownout reset at 4.5V
+BORV46 Brownout reset at 4.6V
+BORV47 Brownout reset at 4.7V
+BORRES Reserved (do not use)
+BROWNOUT Reset when brownout detected
+BROWNOUT_NOSL Brownout enabled during operation, disabled during SLEEP
+BROWNOUT_SW Brownout controlled by configuration bit in special file register
+BW8 8-bit external bus mode
+BW16 16-bit external bus mode
+CCPB0 CCP1 input/output multiplexed with RB0
+CCPB2 CCP1 input/output multiplexed with RB2
+CCPB3 CCP1 input/output multiplexed with RB3
+CCP2B3 CCP2 input/output multiplexed with RB3
+CCP2C1 CCP2 input/output multiplexed with RC1
+CCP2E7 CCP2 input/output multiplexed with RE7
+CLKOUT Output clock on OSC2
+NOCLKOUT I/O function on OSC2
+NOCLOCKOUT I/O function on OSC2
+CLOCKOUT Output clock on OSC2
+CPB Boot Block Code Protected
+CPD Data EEPROM Code Protected
+CPU Microprocessor Mode
+CPU_BB Microprocessor with Boot Block mode
+DEBUG Debug mode for use with ICD
+DPROTECT Protect EE memory
+E4_IO External clock with HW enabled 4X PLL
+E4_SW_IO External Clock with SW enabled 4x PLL
+E4_SW External Clock with SW enabled 4x PLL
+EBTR Memory protected from table reads
+EBTRB Boot block protected from table reads
+EC External clock with CLKOUT
+EC_IO External clock
+ECCPE Enhanced CCP PWM outpts multiplexed with RE6 thorugh RE3
+ECCPH Enhanced CCP PWM outpts multiplexed with RH7 thorugh RH4
+EMCU Extended Microcontroller mode
+ER External resistor osc, with CLKOUT
+ER_IO External resistor osc
+FCMEN Fail-safe clock monitor enabled
+FLTAC1 FLTA input is multiplexed with RC1
+FLTAD4 FLTA input is multiplexed with RD4
+H4 High speed osc with HW enabled 4X PLL
+H4_SW High speed osc with SW enabled 4x PLL
+HPOL_HIGH High-Side Transistors Polarity is Active-High (PWM 1,3,5 and 7)
+HPOL_LOW High-Side Transistors Polarity is Active-Low (PWM 1,3,5 and 7)
+HS High speed Osc (> 4mhz for PCM/PCH) (>10mhz for PCD)
+IESO Internal External Switch Over mode enabled
+INT32KHZ Internal 32 khz Osc
+INT125KHZ Internal 125 khz Osc
+INT128KHZ Internal 128 khz Osc
+INT1MHZ Internal 1 mhz Osc
+INT250KHZ Internal 250 khz Osc
+INT2MHZ Internal 2 mhz Osc
+INT31KHZ Internal 31 khz Osc
+INT4MHZ Internal 4 mhz Osc
+INT500KHZ Internal 500 khz Osc
+INT62KHZ Internal 62 khz Osc
+INTRC Internal RC Osc
+INTRC_IO Internal RC Osc, no CLKOUT
+LP Low power osc < 200 khz
+LPOL_HIGH Low-Side Transistors Polarity is Active-High (PWM 0,2,4 and 6)
+LPOL_LOW Low-Side Transistors Polarity is Active-Low (PWM 0,2,4 and 6)
+LPT1OSC Timer1 configured for low-power operation
+LVP Low Voltage Programming on B3(PIC16) or B5(PIC18)
+MCLR Master Clear pin enabled
+MCU Microcontroller Mode
+NOBORSEN See Datasheet
+NOBROWNOUT No brownout reset
+NOCPB No Boot Block code protection
+NOCPD No EE protection
+NODEBUG No Debug mode for ICD
+NODPROTECT No code protection
+NOEBTR Memory not protected from table reads
+NOEBTRB Boot block not protected from table reads
+NOFCMEN Fail-safe clock monitor disabled
+NOIESO Internal External Switch Over mode disabled
+NOLPT1OSC Timer1 configured for higher power operation
+NOLVP No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O
+NOMCLR  Master Clear pin used for I/O
+NOOSCSEN Oscillator switching is disabled, main oscillator is source
+NOPARITY No memory parity checking
+NOPBADEN PORTB pins are configured as digital I/O on RESET
+NOPROTECT Code not protected from reading
+NOPUT No Power Up Timer
+NOPWMPIN PWM outputs drive active state upon Reset
+NOSTVREN Stack full/underflow will not cause reset
+NOSYNC No sync between I/O and clock
+NOTR Table reads disabled
+NOTW Table writes disabled
+NOWAIT Wait selections unavailable for Table Reads or Table Writes
+NOWDT No Watch Dog Timer
+NOWDTLD No long delay on WDT Postscale
+NOWINEN WDT Timer Window Disabled
+NOWRT Program memory not write protected
+NOWRTD Data EEPROM not write protected
+NOWRTB Boot block not write protected
+NOWRTC Configuration registers not write protected
+NOWURE Wake-up and continue
+NOXINST Extended set extension and Indexed Addressing mode disabled (Legacy mode)
+OSCSEN Oscillator switching is enabled
+PARITY Memory parity checking on
+PBADEN PORTB pins are configured as analog input channels on RESET
+PROTECT Code protected from reads
+PROTECT_5% Protect 5% of ROM
+PROTECT_50% Protect 50% of ROM
+PROTECT_75% Protect 75% of ROM
+PROTECT_88% Protect 88% of ROM
+PROTECT_CAL  Prevent reading of calibration area
+PROTECT_CODE Prevent reading of code
+PROTECT_USER Prevent reading of user area
+PUT Power Up Timer
+PWMPIN PWM outputs disabled upon Reset
+RB4 B4 is an I/O pin not CLKOUT
+RC  Resistor/Capacitor Osc with CLKOUT
+RC_IO Resistor/Capacitor Osc
+SSP_RC SCK/SCL=RC5, SDA/SDI=RC4, SDO=RC7
+SSP_RD SCK/SCL=RD3, SDA/SDI=RD2, SDO=RD1
+STVREN Stack full/underflow will cause reset
+SYNC Sync I/O with clock
+T1LOWPOWER Timer1 low power operation when in sleep
+T1STANDARD Timer1 standard (legacy) oscillator operation
+TR Table reads allowed
+TW Table writes allowed
+WAIT Wait selections for Table Reads and Table Writes
+WDT Watch Dog Timer
+WDT1 Watch Dog Timer uses 1:1 Postscale
+WDT2 Watch Dog Timer uses 1:2 Postscale
+WDT4 Watch Dog Timer uses 1:4 Postscale
+WDT8 Watch Dog Timer uses 1:8 Postscale
+WDT16 Watch Dog Timer uses 1:16 Postscale
+WDT32 Watch Dog Timer uses 1:32 Postscale
+WDT64 Watch Dog Timer uses 1:64 Postscale
+WDT128 Watch Dog Timer uses 1:128 Postscale
+WDT256 Watch Dog Timer uses 1:256 Postscale
+WDT512 Watch Dog Timer uses 1:512 Postscale
+WDT1024 Watch Dog Timer uses 1:1024 Postscale
+WDT2048 Watch Dog Timer uses 1:2048 Postscale
+WDT4096 Watch Dog Timer uses 1:4096 Postscale
+WDT8192 Watch Dog Timer uses 1:8192 Postscale
+WDT16384 Watch Dog Timer uses 1:16384 Postscale
+WDT32768 Watch Dog Timer uses 1:32768 Postscale
+WDTLD Watch Dog Timer with long delay (16x Postscale)
+WINEN WDT Timer Window Enabled
+WRT Program Memory Write Protected
+WRT_50% Lower half of Program Memory is Write Protected
+WRT_25% Lower quarter of Program Memory is Write Protected
+WRT_5% Lower 255 bytes of Program Memory is Write Protected
+WRTD Data EEPROM write protected
+WRTB Boot block write protected
+WRTC Configuration registers write protected
+WURE Wake up and Reset
+XINST Extended set extension and Indexed Addressing mode enabled
+XT Crystal osc <= 4mhz for PCM/PCH , 3mhz to 10 mhz for PCD
+X4 XT Oscillator, PLL enabled
+E4 EC Oscillator, PLL enabled, with CLKOUT
+INTXT Internal Oscillator, XT used by USB
+INTHS Internal Oscillator, HS used by USB
+PLL1 No PLL PreScaler
+PLL2 Divide By 2(8MHz oscillator input)
+PLL3 Divide By 3(12MHz oscillator input)
+PLL4 Divide By 4(16MHz oscillator input)
+PLL5 Divide By 5(20MHz oscillator input)
+PLL6 Divide By 6(24MHz oscillator input)
+PLL8 Divide By 8(32MHz oscillator input)
+PLL10 Divide By 10(40MHz oscillator input)
+PLL12 Divide By 12(48MHz oscillator input)
+CPUDIV1 No System Clock Postscaler
+CPUDIV2 System Clock by 2
+CPUDIV3 System Clock by 3
+CPUDIV4 System Clock by 4
+USBDIV USB clock source comes from PLL divide by 2
+NOUSBDIV USB clock source comes from primary oscillator
+VREGEN USB voltage regulator enabled
+NOVREGEN USB voltage regulator disabled
+ICPRT ICPRT enabled
+NOICPRT ICPRT disabled
+XTPLL Crystal/Resonator with PLL enabled
+HSPLL High Speed Crystal/Resonator with PLL enabled
+ECPLL External Clock with PLL enabled and Fosc/4 on RA6
+ECPIO External Clock with PLL enabled, I/O on RA6
+PRIMARY Primary clock is system clock when scs=00
+EMCU12 Extended microcontroller mode,12 bit address mode
+EMCU16 Extended microcontroller mode,16 bit address mode
+EMCU20 Extended microcontroller mode,20 bit address mode
+EASHFT Address shifting enabled
+NOEASHFT Address shifting disabled
+IOSC4 INTOSC speed 4MHz
+IOSC8 INTOSC speed 8MHz
+PWM4B5 PWM4 output is multiplexed on RB5
+PWM4D5 PWM4 output is multiplexed on RD5
+EXCLKC3 TMR0/T5CKI external clock input is muliplexed with RC3
+EXCLKD0 TMR0/T5CKI external clock input is muliplexed with RD0
+HS1 High speed Osc (1MHz to 50 MHz)
+HS2 High speed Osc (1MHz to 50 MHz)
+HS3 High speed Osc (1MHz to 50 MHz)
+LP1 Low power crystal 32KHZ
+LP2 Low power crystal/resonator 32KHz - 1 MHz
+XT1 Normal Crystal/resonator 32KHz - 10 MHz
+XT2 Normal Crystal/resonator 1MHz - 24 MHz
+TURBO Turbo mode enabled - Instruction clock = osc/1
+NOTURBO Turbo mode disabled - Instruction clock = osc/4
+IFBD Internal osc feedback resistor enabled
+NOIFBD Internal osc feedback resistor disabled
+IRC Internal RC osc enabled
+NOIRC Internal RC osc disabled
+1PAGE_1BANK Configure memory size as 1 page - 1 bank
+1PAGE_2BANK Configure memory size as 1 page - 2 banks
+4PAGE_4BANK Configure memory size as 4 pages - 4 banks
+4PAGE_8BANK Configure memory size as 4 page - 8 banks
+BORTRIM0 Brown-out trim bits setting 0
+BORTRIM1 Brown-out trim bits setting 1
+BORTRIM2 Brown-out trim bits setting 2
+BORTRIM3 Brown-out trim bits setting 3
+CF Carry flag active
+NOCF No carry flag
+OPTIONX Enable programming of RTW and RTE_IE bits in Options register
+NO_OPTIONX Disable programming of RTW and RTE_IE bits in Options register
+PINS_28 Selects the SX-28 device
+PINS_18 Selectes the SX-18/20 devices
+IRCTRIM_MAX Internal RC osc max trim frequency
+IRCTRIM_MIN Internal RC osc min trim frequency
+IRCTRIM_1 Internal RC osc trim setting 1
+IRCTRIM_2 Internal RC osc trim setting 2
+IRCTRIM_3 Internal RC osc trim setting 3
+IRCTRIM_4 Internal RC osc trim setting 4
+IRCTRIM_5 Internal RC osc trim setting 5
+IRCTRIM_6 Internal RC osc trim setting 6
+WDRT_06 Delay reset timer timeout 0.06 ms
+WDRT_7 Delay reset timer timeout 7 ms
+WDRT_18 Delay reset timer timeout 18 ms
+WDRT_60 Delay reset timer timeout 60 ms
+WDRT_480 Delay reset timer timeout 480 ms
+WDRT_960 Delay reset timer timeout 960 ms
+WDRT_1920 Delay reset timer timeout 1920 ms
+SPCLK Enable clock in power down mode
+NOSPCLK Disable clock in power down mode
+DRT06 Delay Reset Timer timeout period 0.6 us
+DRT18 Delay Reset Timer timeout period 18 us
+DRT60 Delay Reset Timer timeout period 60 us
+DRT960 Delay Reset Timer timeout period 960 us
+XTLBUF_EN Crystal Buffer enable
+NOXTLBUF Crystal Buffer disabled
+IRCTRIM_TYP Typical IRC TRIM bits setting
+RESERVED Used to set the reserved FUSE bits
+MCPU Master Clear Pull-up enabled
+NOMCPU Master Clear Pull-up disabled
+FLTAA7 FLTA multiplexed on A7
+FLTAA5 FLTA multiplexed on A5
+T0CKB5 T0 Clock In is on B5
+T0CKG4 T0 Clock In is on G4
+T1OSCA6 T1 oscillator pin on A6
+T1OSCB2 T1 oscillator pin on B2
+T3CKB5 T3 Clock In is on B5
+T2CKC0 T3 Clock In is on C0
+T3CKG2 T3 Clock In is on G2
+BBSIZ256 Boot block size 256 bytes
+BBSIZ512 Boot block size 512 bytes
+ETHLED Ethernet LED enabled
+NOETHLED Ethernet LED disabled
+XT_PLL4  XT Crystal Oscillator mode with 4X PLL
+XT_PLL8  XT Crystal Oscillator mode with 8X PLL
+XT_PLL16  XT Crystal Oscillator mode with 16X PLL
+EC_PLL4  External Clock mode with 4X PLL
+EC_PLL8  External Clock mode with 8X PLL
+EC_PLL16 External Clock mode with 16X PLL
+FRC  Internal Fast RC Oscillator
+LPRC Internal low power RC Oscillator
+PR Primary Oscillator
+NOCKSFSM  Clock Switching is disabled, fail Safe clock monitor is disabled
+CKSNOFSM  Clock Switching is enabled, fail Safe clock monitor is disabled
+CKSFSM  Clock Switching is enabled, fail Safe clock monitor is enabled
+WPSB1 Watch Dog Timer PreScalar B 1:1
+WPSB2 Watch Dog Timer PreScalar B 1:2
+WPSB3 Watch Dog Timer PreScalar B 1:3
+WPSB4 Watch Dog Timer PreScalar B 1:4
+WPSB5 Watch Dog Timer PreScalar B 1:5
+WPSB6 Watch Dog Timer PreScalar B 1:6
+WPSB7 Watch Dog Timer PreScalar B 1:7
+WPSB8 Watch Dog Timer PreScalar B 1:8
+WPSB9 Watch Dog Timer PreScalar B 1:9
+WPSB10 Watch Dog Timer PreScalar B 1:10
+WPSB11 Watch Dog Timer PreScalar B 1:11
+WPSB12 Watch Dog Timer PreScalar B 1:12
+WPSB13 Watch Dog Timer PreScalar B 1:13
+WPSB14 Watch Dog Timer PreScalar B 1:14
+WPSB15 Watch Dog Timer PreScalar B 1:15
+WPSB16 Watch Dog Timer PreScalar B 1:16
+WPSA1 Watch Dog Timer PreScalar A 1:1
+WPSA8 Watch Dog Timer PreScalar A 1:8
+WPSA64 Watch Dog Timer PreScalar A 1:64
+WPSA512 Watch Dog Timer PreScalar A 1:512
+PUT4 Power On Reset Timer value 4ms
+PUT16 Power On Reset Timer value 16ms
+PUT64 Power On Reset Timer value 64ms
+COE Device will reset into Clip-On-Emulation mode
+NOCOE Device will reset into operational mode
+ICSP ICD uses PGC/PGD pins
+ICSP1 ICD uses PGC1/PGD1 pins
+ICSP2 ICD uses PGC2/PGD2 pins
+ICSP3 ICD uses PGC3/PGD3 pins
+ICSP4 ICD uses PGC4/PGD4 pins
+DISABLE_SPCLK
+WDRT1920
+NO_CF
+ENABLE_SPCLK
+INT128KHZ
+NO_TURBO
+4PAGE4BANK
+1PAGE1BANK
+ICRTRIM_1
+ICRTRIM_1
+ICRTRIM_MIN
+ICRTRIM_MAX
+ICRTRIM_1
+ICRTRIM_2
+ICRTRIM_3
+ICRTRIM_4
+ICRTRIM_5
+ICRTRIM_6
+ENABLE_SPCLK
+INTOSCIO
+BOR42
+BOR26
+BOR22
+ETHLEDNOEMB
+NOCFXTLBUF_EN
+HFOFST High Frequency INTRC starts clocking CPU immediately
+NOHFOFST High Frequency INTRC waits until stable before clocking CPU
+BANDGAP_HIGH
+BANDGAP_LOW
+MSSPMSK7 MSSP uses 7 bit Masking mode
+MSSPMSK5 MSSP uses 5 bit Masking mode
+INTRC_PLL_IO Internal RC Osc with 4X PLL, no CLKOUT
+INTRC_PLL Internal RC Osc with 4X PLL
+CPUDIV6 System Clock by 6
+NOCPUDIV System Clock by 1
+CPBH
+CPBS
+FRC_PLL Internal Fast RC oscillator with PLL
+PR_PLL Primary Oscillator with PLL
+FRANGE_HIGH Frequency Range for FRC 14.55MHz
+FRANGE_LOW Frequency Range for FRC 9.7MHz
+OSCIO OSC2 is general purpose output
+NOOSCIO OSC2 is clock output
+NOPR Pimary oscillaotr disabled
+WINDIS Watch Dog Timer in non-Window mode
+NOWINDIS Watch Dog Timer in Window mode
+WPRES128 Watch Dog Timer PreScalar 1:128
+WPRES32  Watch Dog Timer PreScalar 1:32
+WPOSTS1  Watch Dog Timer PostScalar 1:1
+WPOSTS2  Watch Dog Timer PostScalar 1:2  
+WPOSTS3  Watch Dog Timer PostScalar 1:4
+WPOSTS4  Watch Dog Timer PostScalar 1:8
+WPOSTS5  Watch Dog Timer PostScalar 1:16
+WPOSTS6  Watch Dog Timer PostScalar 1:32
+WPOSTS7  Watch Dog Timer PostScalar 1:64
+WPOSTS8  Watch Dog Timer PostScalar 1:128
+WPOSTS9  Watch Dog Timer PostScalar 1:256
+WPOSTS10  Watch Dog Timer PostScalar 1:512
+WPOSTS11  Watch Dog Timer PostScalar 1:1024
+WPOSTS12  Watch Dog Timer PostScalar 1:2048
+WPOSTS13  Watch Dog Timer PostScalar 1:4096
+WPOSTS14  Watch Dog Timer PostScalar 1:8192
+WPOSTS15  Watch Dog Timer PostScalar 1:16384
+WPOSTS16  Watch Dog Timer PostScalar 1:32768
+PUT2 Power On Reset Timer value 2ms
+PUT8 Power On Reset Timer value 8ms
+PUT32 Power On Reset Timer value 32ms
+PUT128 Power On Reset Timer value 128ms
+ISC1
+ISC2
+JTAG JTAG enabled
+NOJTAG JTAG disabled
+SOSC Secondary oscillator
+FRCDIV   Fast RC Oscillator with Post Scaler
+NOSKSFSM Clock Switching Mode is disabled
+IOL1WAY  Allows only one reconfiguration of peripheral pins
+NOIOL1WAY Allows multiple reconfigurations of peripheral pins
+I2C1SELD I2C1 uses default SCL1/SDA1 pins
+I2C1SELA I2C1 uses alternate SCL1/SDA1 pins
+PROTECTS Standard Code protection
+SC
+FRC_PS  Fast RC Oscillator with Post Scaler
+TEMP  Temparature protection enabled
+NOTEMP  Temparature protection disabled
+PROTECTH High Code protection
+NORSS No secure segment RAM
+RSS256 Small-sized secure RAM
+RSS2048 Medium sized secure RAM
+RSS4096 Large sized secure RAM
+NOSSS No secure segment
+SSSS Standard protection for secure segment
+SSSH High protection for secure segment
+WRTSS Secure segment write protected
+NOWRTSS Secure segment not write protected
+NORBS No Boot RAM defined
+RBS128 Boot RAM is 128 bytes
+RBS256 Boot RAM is 256 bytes
+RBS1024 Boot RAM is 1024 bytes
+ALTI2C I2C mapped to alternate pins
+NOALTI2C I2C mapped to SDA1/SCL1 pins
+FRC_DIV_BY_16 Internal FAST RC oscillator with 16x PLL
+FRC_PLL4 Internal Fast RC oscillator with 4X PLL
+FRC_PLL8 Internal Fast RC oscillator with 8X PLL
+FRC_PLL16 Internal Fast RC oscillator with 16X PLL
+PROTECTDF 
+NOPROTECTDF
+RSS 
+BSSH High protection for boot segment
+BSSS Standard protection for boot segment
+NOBSS No boot segment
+RBS    Boot Segment RAM code Protection
+HPOL_HIGH PWM module high side output pins have active high output polarity
+HPOL_LOW PWM module high side output pins have active low output polarity
+LPOL_HIGH PWM module low side output pins have active high output polar
+PMPEMB PMP Pins are on the external memory bus
+NOPMPEMB PMP Pins are not on the external memory bus
+HSM High speed Osc, medium power 4MHz-16MHz
+HSH High speed Osc, high power 16MHz-25MHz
+ECL External clock with CLKOUT(PIC18), low power
+ECM External clock with CLKOUT(PIC18), medium power
+ECH External clock with CLKOUT(PIC18), high power
+ECL_IO External clock, low power
+ECM_IO External clock, medium power
+ECH_IO External clock ,high power
+BORV30 Brownout reset at 3.0V
+BORV18 Brownout reset at 1.8V
+BORV19 Brownout reset at 1.9V
+WDT_SW No Watch Dog Timer, enabled in Software
+WDT_NOSLEEP Watch Dog Timer, disabled during SLEEP
+WDT_NOSL Watch Dog Timer, disabled during SLEEP
+WDT1048576 Watch Dog Timer uses 1:1048576 Postscale
+WDT524288 Watch Dog Timer uses 1:524288 Postscale
+WDT262144 Watch Dog Timer uses 1:262144 Postscale
+WDT131072 Watch Dog Timer uses 1:131072 Postscale
+WDT65536 Watch Dog Timer uses 1:65536 Postscale
+RTCOSC_INT RTCC uses Internal 31KHz Oscillator as reference source
+RTCOSC_T1 RTCC uses Secondary Oscillator as reference source
+RTCCK_SOSC RTCC uses Secondary Oscillator as reference source
+RTCOSC_LP RTCC uses LPRC as reference source
+VCAP_A0 VCAP pin enabled on A0
+VCAP_A5 VCAP pin enabled on A5
+VCAP_A6 VCAP pin enabled on A6
+NOVCAP VCAP pin disabled
+VCAP VCAP pin enabled
+PLL_SW 4X HW PLL disabled, 4X PLL enabled/disabled in software
+PLL 4X HW PLL enabled
+WRT_BOOT Program Memory Write Protected from 0 to 0x0FF
+WRT_EECON200 Program Memory Write Protected from 0 to 0x1FF
+WRT_EECON400 Program Memory Write Protected from 0 to 0x3FF
+WRT_EECON1000 Program Memory Write Protected from 0 to 0xFFF
+WRT_EECON2000 Program Memory Write Protected from 0 to 0x1FFF
+NOPLLEN HW PLL disabled, PLL enabled in software
+PLLEN HW PLL enabled
+PCLKEN Primary External Clock Enabled
+NOPCLKEN Primary External Clock Disabled, Primary External Clock enabled in software
+NOPROTECT_0 Program Memory Block 0 not protected from reading 
+PROTECT_0 Program Memory Block 0 protected from reads
+NOPROTECT_1 Program Memory Block 1 not protected from reading
+PROTECT_1 Program Memory Block 1 protected from reads
+WRT0 Program Memory Block 0 write protected
+WRT1 Program Memory Block 1 write protected
+NOWRT0 Program Memory Block 0 not write protected
+NOWRT1 Program Memory Block 1 not write protected
+USBDIV2 USB clock comes from the OSC1/OSC2 divided by 2
+USBDIV1 USB clock comes directly from the OSC1/OSC
+DSWDTOSC_INT DSWDT uses INTRC as reference clock
+DSWDTOSC_T1 DSWDT uses T1OSC/T1CKI as reference clock
+DSBOR BOR enabled in Deep Sleep
+NODSBOR BOR disabled in Deep Sleep
+DSWDT Deep Sleep Watchdog Timer enabled
+NODSWDT Deep Sleep Watchdog Timer disabled
+DSWDT2 DSWDT uses 1:2 Postscale
+DSWDT8 DSWDT uses 1:8 Postscale
+DSWDT32 DSWDT uses 1:32 Postscale
+DSWDT128 DSWDT uses 1:128 Postscale
+DSWDT512 DSWDT uses 1:512 Postscale
+DSWDT2048 DSWDT uses 1:2048 Postscale
+DSWDT8192 DSWDT uses 1:8192 Postscale
+DSWDT32768 DSWDT uses 1:32768 Postscale
+DSWDT131072 DSWDT uses 1:131072 Postscale
+DSWDT524288 DSWDT uses 1:524288 Postscale
+DSWDT2097152 DSWDT uses 1:2097152 Postscale
+DSWDT8388608 DSWDT uses 1:8388608 Postscale
+DSWDT33554432 DSWDT uses 1:33554432 Postscale
+DSWDT134217728 DSWDT uses 1:134217728 Postscale
+DSWDT536870912 DSWDT uses 1:536870912 Postscale
+DSWDT2147483648 DSWDT uses 1:2147483648 Postscale
+WPEND Flash pages WPFP to Configuration Words page are write/erase protected
+WPBEG Flash pages 0 to WPFP are write/erase protected
+WPFP Write/Erase Protect Page Start/End Location, set to last page or use WPFP=x to set page
+NOWPFP Write/Erase Protect Page Start/End Location, set to page 0
+NOWPCFG Configuration Words page is not erase/write-protected
+WPCFG Configuration Words page is erase/write-protected
+WPDIS All Flash memory may be erased or written
+NOWPDIS Erase/write-protect active for the selected region(s)
+TIMER3C0 Timer3 Clock In is on pin C0
+TIMER3B5 Timer3 Clock In is on pin B5
+CCP2B5 CCP2 input/output multiplexed with RB5
+CCP2C0 CCP2 input/output multiplexed with RC0
+CCP2D2 CCP2 input/output multiplexed with RD2
+PRIMARY_ON Primary clock is always enabled
+PRIMARY_SW Primary clock can be disabled in software
+CCP3C6 CCP3 input/output multiplexed with RC6
+CCP3B5 CCP3 input/output multiplexed with RB5
+CCP3E0 CCP3 input/output multiplexed with RE0
+NOT1DIG Secondary Oscillator Source may be select if T1CON.3 = 1
+T1DIG Secondary Oscillator Source may be select regardless of T1CON.3 state
+ECPLL_IO External Clock with PLL enabled, I/O on RA6
+INTEC_IO Internal Clock, EC used by USB, I/O on RA6
+INTEC Internal Clock, EC used by USB
+VREGSLEEP_SW Ultra low-power regulator is enabled
+VREGSLEEP Ultra low-power regulator is disabled
+INTRC_LP LF-INTOSC in Low-Power mode during Sleep
+INTRC_HP LF-INTOSC in High-Power mode during Sleep
+SOSC_LOW Low-power SOSC circuit is selected
+SOSC_HIGH High-power SOSC circuit is selected
+SOSC_DIG Digital mode, I/O port functionality of RC0 and RC1
+SOSC_SEL SOSC circuit selected
+ZPBORM Zero-Power BOR
+BORM_HIGH High-power BOR
+BORM_MED Medium Power BOR
+BORM_LOW Low-power BOR
+CANB CANTX and CANRX pins are located on RB2 and RB3
+CANC CANTX and CANRX pins are located on RC6 and RC7
+CANE CANTX and CANRX pins are located on RE4 and RE5
+EXTADDRSFT External address is shifted to start at 0x000000
+NOEXTADDRSFT External address bus reflects the PC value
+INTRCPLL_IO Internal RC Osc with 4X PLL, no CLKOUT
+INTRCPLL Internal RC Osc with 4X PLL
+HPT1OSC Timer1 configured for high-power operation
+LPBORV Low-power Brown-out Reset occurs around 2.0V
+BORV_HIGH Brown-out Reset set to highest voltage
+BORV_MID Brown-out Reset set inbetween highest and lowest voltage
+BORV_LOW Brown-out Reset set to lowest voltage
+LPFRC_DIV Low-Power FRC oscillator with divide-by-N
+FRC_DIV Internal Fast RC oscillator with divide-by-N and PLL
+POSCFREQ_H Primary oscillator/external clock input frequency greater than 8 MHz
+POSCFREQ_M Primary oscillator/external clock input frequency between 100 kHz and 8 MHz
+POSCFREQ_L Primary oscillator/external clock input frequency less than 100 kHz
+BSSH4K 
+BSSS4K
+BSSH1K
+SSSH16K Secure Segment Code Protect High Security, Secure Segment ends at 0x007FFE
+SSSS16K Secure Segment Code Protect Standard Security, Secure Segment ends at 0x007FFE
+SSSH8K Secure Segment Code Protect High Security, Secure Segment ends at 0x003FFE
+SSSS8K Secure Segment Code Protect Standard Security, Secure Segment ends at 0x003FFE
+SSSH4K Secure Segment Code Protect High Security, Secure Segment ends at 0x001FFE 
+SSSS4K Secure Segment Code Protect Standard Security, Secure Segment ends at 0x001FFE
+SSSHL Secure Segment Code Protect High Security, Large Secure Segment
+SSSHM Secure Segment Code Protect High Security, Medium Secure Segment
+SSSHS Secure Segment Code Protect High Security, Small Secure Segment
+SSSSL Secure Segment Code Protect Standard Security, Large Secure Segment
+SSSSM Secure Segment Code Protect Standard Security, Medium Secure Segment
+SSSSS Secure Segment Code Protect Standard Security, Small Secure Segment
+BSSH768 Boot Segment Code Protect High Security, Boot Segment ends at 0x0007FE
+BSSS768 Boot Segment Code Protect Standard Security, Boot Segment ends at 0x0007FE
+BSSH1792 Boot Segment Code Protect High Security, Boot Segment ends at 0x000FFE
+BSSS1792 Boot Segment Code Protect Standard Security, Boot Segment ends at 0x000FFE
+BSSH256 Boot Segment Code Protect High Security, Boot Segment ends at 0x0003FE
+BSSS256 Boot Segment Code Protect Standard Security, Boot Segment ends at 0x0003FE
+PROTECT_HIGH General Segment Code Protect High Security
+BSSS1152 Boot Segment Code Protect Standard Security, Boot Segment ends at 0x000AFE
+BSSH1152 Boot Segment Code Protect High Security, Boot Segment ends at 0x000AFE
+BSSS2560 Boot Segment Code Protect Standard Security, Boot Segment ends at 0x0015FE
+BSSH2560 Boot Segment Code Protect High Security, Boot Segment ends at 0x0015FE
+BSSS5376 Boot Segment Code Protect Standard Security, Boot Segment ends at 0x002BFE
+BSSH5376 Boot Segment Code Protect High Security, Boot Segment ends at 0x002BFE
+DSWDTCK_SOSC DSWDT uses SOSC as reference clock
+DSWDTCK_LPRC DSWDT uses LPRC as reference clock
+RTCOSC_SOSC RTCC uses SOSC as reference clock
+RTCOSC_LPRC RTCC uses LPRC as reference clock
+SOSC_SEC Secondary Oscillator uses High Power Drive Strength
+SOSC_SEC_LP Secondary Oscillator uses Low Power Drive Strength
+WUT_DEFAULT Voltage Regulator Standby Mode Wake-up Time uses Default start-up time
+WUT_FAST Voltage Regulator Standby Mode Wake-up Time uses Fast start-up time
+NOCKSNOFSM Clock Switching is disabled, fail Safe clock monitor is disabled
+SOSC_IO SOSC pins have digital I/O functions
+PLL96MHZ 96MHz PLL is enabled
+PLL96MHZ_SW 96MHz PLL is enabled in software
+PLLDIV1 No PLL PreScaler
+PLLDIV2 Divide By 2(8MHz oscillator input)
+PLLDIV3 Divide By 3(12MHz oscillator input)
+PLLDIV4 Divide By 4(16MHz oscillator input)
+PLLDIV5 Divide By 5(20MHz oscillator input)
+PLLDIV6 Divide By 6(24MHz oscillator input)
+PLLDIV8 Divide By 8(32MHz oscillator input)
+PLLDIV12 Divide by 12(48MHz oscillator input)
+DISUVREG Internal USB 3.3V Regulator disabled
+NODISUVREG Internal USB 3.3V Regulator enabled
+WPEND_LOW Flash pages 0 to WPFP are write/erase protected
+WPEND_HIGH Flash pages WPFP to Configuration Words page are write/erase protected
+VREFNORM VREF is on a default pins, VREF+ on RA10 and VREF- on RA9
+VREFALT VREF is on a alternate pins, VREF+ on RB0 and VREF- on RB1
+PMPNORM PMP pins are in default location
+PMPALT PMP pins are in alternate location
+PMPDE PMP pins are in default location (PORTD and PORTE)
+PMPAFH PMP pins are in alternate location (PORTA, PORTF and PORTH)
+XLT Crystal osc (200kHz - 4MHz)
+XTL Crystal osc (200kHz - 4MHz)
+HS2_PLL4 High Speed Crystal osc (10-25MHz) divide by 2 with 4X PLL
+HS2_PLL8 High Speed Crystal osc (10-25MHz) divide by 2 with 8X PLL
+HS2_PLL16 High Speed Crystal osc (10-25MHz) divide by 2 with 16X PLL
+HS3_PLL4 High Speed Crystal osc (10-25MHz) divide by 3 with 4X PLL
+HS3_PLL8 High Speed Crystal osc (10-25MHz) divide by 3 with 8X PLL
+HS3_PLL16 High Speed Crystal osc (10-25MHz) divide by 3 with 16X PLL
+BSSSS Boot Segment Code Protect Standard Security, Small Boot Segment
+BSSSM Boot Segment Code Protect Standard Security, Medium Boot Segment
+BSSSL Boot Segment Code Protect Standard Security, Large Boot Segment
+BSSHS Boot Segment Code Protect High Security, Small Boot Segment
+BSSHM Boot Segment Code Protect High Security, Medium Boot Segment
+BSSHL Boot Segment Code Protect High Security, Large Boot Segment
+NOEBS No Boot Data EEPROM Segment
+EBS Boot Data EEPROM Segment is 256 bytes
+RBSS Small Boot RAM Segment
+RBSM Medium Boot RAM Segment
+RBSL Large Boot RAM Segment
+NOESS No Secure Data EEPROM Segment
+ESS Secure Date EEPROM Segment is 2048 bytes
+SS1NORM Use default SS1 pin for SPI1
+SS1ALT Use alternate SS1 pin for SPI1
+QEIALT Use alternate QEA1, QEB1 and INDX1 pins for QEI1
+QEINORM Use default QEA1, QEB1 and INDX1 pins for QEI1
+COMP_E_45MV Even Comparators Hysteresis set to 45 mV
+COMP_E_30MV Even Comparators Hysteresis set to 30 mV
+COMP_E_15MV Even Comparators Hysteresis set to 15 mV
+COMP_E_0MV Even Comparators Hysteresis set to 0 V
+COMP_E_H2L Even Comparators Hysteresis applied to falling edge
+COMP_E_L2H Even Comparators Hysteresis applied to rising edge
+COMP_O_45MV Odd Comparators Hysteresis set to 45 mV
+COMP_O_30MV Odd Comparators Hysteresis set to 30 mV
+COMP_O_15MV Odd Comparators Hysteresis set to 15 mV
+COMP_O_0MV Odd Comparators Hysteresis set to 0 V
+COMP_O_H2L Odd Comparators Hysteresis applied to falling edge
+COMP_O_L2H Odd Comparators Hysteresis applied to rising edge
+PROTECTDF Flash Data Memory protected from reads
+NOPROTECTDF Flash Data Memory not protected from reads
+NOWRT0_50% Program Memory Block 0 not write protected
+WRT0_50% Program Memory Block 0 write protected
+NOWRT1_50% Program Memory Block 1 not write protected
+WRT1_50% Program Memory Block 1 write protected
+ADC10 ADC is 10-bits
+ADC12 ADC is 12-bits
+WDTWIN_25% Watchdog Window is 25% of WDT period
+WDTWIN_37% Watchdog Window is 37.5% of WDT period
+WDTWIN_50% Watchdog Window is 50% of WDT period
+WDTWIN_75% Watchdog Window is 75% of WDT period
+PWMLOCK Certain PWM register may only be written after key sequence
+NOPWMLOCK PWM register may be written without key sequence
+MS Crystal Oscillator 4mhz to 10mhz
+PLLWAIT Clock switch to PLL will wait until the PLL lock signal is valid
+NOPLLWAIT Clock switch will not wait for the PLL lock signal
+ALTI2C1 I2C1 mapped to ASDA1/ASCL1 pins
+NOALTI2C1 I2C1 mapped to SDA1/SCL1 pins
+ALTI2C2 I2C2 mapped to ASDA2/ASCL2 pins
+NOALTI2C2 I2C2 mapped to SDA2/SCL2 pins
+NOGSSK General Segment Key bits, use if using both NOWRT and NOPROTECT fuses
+GSSK General Segment Key bits, use if using either WRT or PROTECT fuses 
+RESET_AUX Device will reset to Auxiliary Flash Reset location
+RESET_PRIMARY Device will reset to Primary Flash Reset location
+AWRT Auxiliary program memory is write-protected
+NOAWRT Auxiliary program memory is not write-protected
+APROTECT Auxiliary program memory is code-protected
+NOAPROTECT Auxiliary program memory is not code-protected
+APLK Auxiliary Segment Key bits, use if using either AWRT or APROTECT fuses
+NOAPLK Auxiliary Segment Key bits, use if using both NOAWRT and NOAPROTECT fuses
+NOLPBOR Low-Power Brownout reset is disabled
+LPBOR Low-Power Brownout reset is enabled
+NOLPBROWNOUT Low-Power Brownout reset is disabled
+LPBROWNOUT Low-Power Brownout reset is enabled
+WRT_100 Program Memory Write Protected from 0 to 0x0FF
+WRT_200 Program Memory Write Protected from 0 to 0x1FF
+WRT_400 Program Memory Write Protected from 0 to 0x3FF
+WRT_800 Program Memory Write Protected from 0 to 0x7FF
+WRT_1000 Program Memory Write Protected from 0 to 0x0FFF
+WRT_2000 Program Memory Write Protected from 0 to 0x1FFF
+LS48MHZ Low-Speed USB Clock Selection, 48MHz system clock is expected divide by 8 generates low-speed USB clock
+LS24MHZ Low-Speed USB Clock Selection, 24MHz system clock is expected divide by 4 generated low-speed USB clock
+VREFALT_CVREFALT VREF and CVREF are mapped to AVDD and AVSS
+VREFALT_CVREFNORM VREF is mapped to AVDD and AVSS; CVREF is mapped to default pins
+VREFNORM_CVREFALT VREF is mapped to default pins; CVREF is mapped to AVDD and AVSS
+VREFNORM_CVREFNORM VREF and CVREF are mapped to their default pins
+DS_SW Deep Sleep is controlled by the register bit DSEN
+NODS Deep Sleep operation is always disabled
+DSWDT_25DAYS DSWDT uses 1:68719476736 Postscale (25.7Days)
+DSWDT_12DAYS DSWDT uses 1:34359738368 Postscale (12.8Days)
+DSWDT_6DAYS DSWDT uses 1:17179869184 Postscale (6.4Days)
+DSWDT_77HRS DSWDT uses 1:8589934592 Postscale (77Hours)
+DSWDT_38HRS DSWDT uses 1:4294967296 Postscale (38.5Hours)
+DSWDT_19HRS DSWDT uses 1:2147483648 Postscale (19.2Hours)
+DSWDT_9HRS DSWDT uses 1:1073741824 Postscale (9.6Hours)
+DSWDT_4HRS DSWDT uses 1:536870912 Postscale (4.8Hours)
+DSWDT_2HRS DSWDT uses 1:268435456 Postscale (2.4Hours)
+DSWDT_72MINS DSWDT uses 1:134217728 Postscale (72.2Minutes)
+DSWDT_36MINS DSWDT uses 1:67108864 Postscale (36.1Minutes)
+DSWDT_18MINS DSWDT uses 1:33554432 Postscale (18Minutes)
+DSWDT_9MINS DSWDT uses 1:16777216 Postscale (9Minutes)
+DSWDT_4MINS DSWDT uses 1:8388608 Postscale (4.5Minutes)
+DSWDT_135SEC DSWDT uses 1:4194304 Postscale (135.3Secs)
+DSWDT_67SEC DSWDT uses 1:2097152 Postscale (67.7Secs)
+DSWDT_33SEC DSWDT uses 1:1048576 Postscale (33.825Secs)
+DSWDT_16SEC DSWDT uses 1:524288 Postscale (16.912Secs)
+DSWDT_8SEC DSWDT uses 1:262114 Postscale (8.456Secs)
+DSWDT_4SEC DSWDT uses 1:131072 Postscale (4.228Secs)
+DSWDT_2SEC DSWDT uses 1:65536 Postscale (2.114Secs)
+DSWDT_1SEC DSWDT uses 1:32768 Postscale (1.057Secs)
+DSWDT_528MS DSWDT uses 1:16384 Postscale (528.5mS)
+DSWDT_264MS DSWDT uses 1:8192 Postscale (264.3mS)
+DSWDT_132MS DSWDT uses 1:4096 Postscale (132.1mS)
+DSWDT_66MS DSWDT uses 1:2048 Postscale (66.1mS)
+DSWDT_33MS DSWDT uses 1:1024 Postscale (33mS)
+DSWDT_16MS DSWDT uses 1:512 Postscale (16.5mS)
+DSWDT_8MS DSWDT uses 1:256 Postscale (8.3mS)
+DSWDT_4MS DSWDT uses 1:128 Postscale (4.1mS)
+DSWDT_2MS DSWDT uses 1:64 Postscale (2.1mS)
+DSWDT_1MS DSWDT uses 1:32 Postscale (1mS)
+LVR Low Voltage Regulator Enabled, Controlled in Software 
+NOLVR Low Voltage Regulator Disabled
+VBATBOR VBAT BOR Enabled
+NOVBATBOR VBAT BOR Disabled
+PLL3X 3x PLL Output Frequency is selected
+PLL4X 4x PLL Output frequency is selected
+SDOC7 SDO is on RC7
+SDOB3 SDO is on RB3
